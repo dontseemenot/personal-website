@@ -1,0 +1,233 @@
+/* Universal elements */
+
+:root {
+    /* https://colorhunt.co/palette/00579253cde2d1f4faedf9fc */
+    --colorBackground1: #005792;
+    --colorBackground2: #53CDE2;
+    --colorBackground3: #D1F4FA;
+    --colorBackground4: #EDF9FC;
+    --colorHyperlink: #005792;
+
+    --colorBlack: black;
+    --colorWhite: white;
+    --colorGrey: grey;
+    --lineHeight: 1.5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Top container elements */
+
+.top-container {
+    background-color: var(--colorBackground1);
+    position: relative;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.title-div {
+    margin: 50px 0px 0px 0px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+.subtitle-div {
+    margin: 10px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+.subtitle-vert-div {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.top-container h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--colorWhite);
+    display: inline-block;
+    padding-right: 2rem;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.top-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--colorWhite);
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 400px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    display: inline-block;
+    padding-left: 2rem;
+    vertical-align: middle;
+    zoom: 10%;
+    
+}
+
+.subtitle-img {
+    zoom: 40%;
+    vertical-align: middle;
+}
+
+/* Middle container elements */
+.middle-container {
+    margin: 0;
+}
+
+.section-div {
+    margin: 100px auto;
+}
+
+.middle-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.middle-container h2 {
+    text-align: center;
+}
+
+.middle-container h3 {
+    font-size: 1.2rem;
+}
+
+.middle-container p {
+    line-height: var(--lineHeight);
+    text-align: left;
+}
+
+.middle-container a {
+    color: var(--colorHyperlink);
+    text-decoration: none;
+}
+
+.middle-container a:hover {
+    color: rgb(129, 182, 247);
+}
+
+.middle-container ul {
+    list-style-position: outside;
+    padding-left: 0;
+    line-height: var(--lineHeight);
+    margin: 0px 0px 0px 1rem; /* bullet point indent */
+}
+
+.middle-container hr {
+    border: dotted grey 6px;
+    border-bottom: none;
+    width: 4%;
+}
+
+/* Section div: Work */
+
+.work-div-row {
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.work-img-div {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+.work-role {
+    font-weight: bold;
+    margin: 0px;    /* Make first line align to top of image */
+}
+
+.work-date {
+    font-style: italic;
+    color: var(--colorGrey);
+    font-weight: normal;
+}
+
+.work-team {
+    font-weight: bold;
+}
+
+.work-company {
+    font-weight: bold;
+}
+
+.work-desc {
+    display: inline-block;
+    width: 70%;
+}
+
+.work-img {
+    width: 200px;
+    height: auto;
+}
+
+.cat-gif {
+    display: block;
+    margin: auto;
+}
+
+/* Bottom container elements */
+.bottom-container {
+    background-color: var(--colorBackground2);
+    margin-top: 0px;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.bottom-container p {
+    text-align: center;
+}
+
+.footer-link {
+
+}
+
+.bottom-container a:hover {
+    color: var(--colorWhite);
+}
+
+.copyright {
+    text-align: center;
+}
+
+.contact-me {
+    width: 40%;
+
+}
+
+.contact-div {
+
+    text-align: center;
+}
+
+.contact-text {
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-div ul li {
+    display: inline-block;
+    text-align: center;
+    margin: auto 10px;
+}
