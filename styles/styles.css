@@ -12,11 +12,11 @@
     --colorWhite: white;
     --colorGrey: grey;
     --lineHeight: 1.5;
-    --mobileWidth: 800px;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 /* Nav container elements */
@@ -29,7 +29,7 @@ body {
     background-color: var(--colorBackground1);
     color: var(--colorWhite);
     display: grid;
-    padding: 50px 0px 25px 0px;
+    padding: 50px 50px 25px 50px;
     text-align: center;
 }
 
@@ -105,7 +105,7 @@ body {
 
 .middle-container .section-desc {
     text-align: left;
-    margin: 0px 50px 50px 0px;
+    
 }
 
 @media (min-width: 800px) {
@@ -117,6 +117,9 @@ body {
         grid-column: span 2;
 
     }
+    .middle-container .section-desc {
+        margin: 0px 50px 50px 0px;
+    }
 
 }
 
@@ -126,6 +129,9 @@ body {
     }
     .middle-container .section-header {
         grid-column: span 1;
+    }
+    .middle-container .section-desc {
+        margin: 0px 50px 50px 50px;
     }
 
 }
