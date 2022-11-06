@@ -12,105 +12,141 @@
     --colorWhite: white;
     --colorGrey: grey;
     --lineHeight: 1.5;
+    --mobileWidth: 800px;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+}
+
+/* Nav container elements */
+.container-nav {
+    display: grid;
 }
 
 /* Top container elements */
-
 .top-container {
     background-color: var(--colorBackground1);
-    position: relative;
-    padding: 50px 0px;
-    text-align: center;
-}
-
-.title-div {
-    margin: 50px 0px 0px 0px;
-    display: inline-block;
-    width: 80%;
-    text-align: center;
-}
-
-.subtitle-div {
-    margin: 10px;
-    display: inline-block;
-    width: 80%;
-    text-align: center;
-}
-
-.subtitle-vert-div {
-    margin: 10px;
-    display: inline-block;
+    color: var(--colorWhite);
+    display: grid;
+    padding: 50px 0px 25px 0px;
     text-align: center;
 }
 
 .top-container h1 {
     font-size: 5rem;
-    text-align: center;
-    color: var(--colorWhite);
-    display: inline-block;
-    padding-right: 2rem;
-    width: 50%;
-    vertical-align: middle;
 }
 
 .top-container h2 {
     font-size: 2.5rem;
-    text-align: center;
-    color: var(--colorWhite);
 }
 
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 50px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 300px;
-    bottom: 400px;
-}
-
-.profile-img {
+.top-container .profile-img {
     border-radius: 50%;
-    display: inline-block;
-    padding-left: 2rem;
-    vertical-align: middle;
     zoom: 10%;
-    
 }
 
-.subtitle-img {
+.top-container .subtitle-img {
     zoom: 40%;
     vertical-align: middle;
+}
+@media (min-width: 800px) {
+    .top container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(repeat(2, 1fr));
+    }
+    .top-container .title-area1 {
+        grid-column: span 4;
+        grid-row-start: 1;
+    }
+    
+    .top-container .title-area2 {
+        grid-column: span 2;
+        grid-row-start: 1;
+    }
+    
+    .top-container .subtitle-area {
+        grid-column: span 2;
+        grid-row-start: 2;
+    }
+}
+@media (max-width: 800px) {
+    .top-container {
+        grid-auto-rows: minmax(repeat(6, 1fr));
+    }
+    .top-container .title-area1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .top-container .title-area2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .top-container .subtitle-area {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
 /* Middle container elements */
 .middle-container {
-    margin: 0;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    display: grid;
+    padding: 25px 0px;
+    text-align: center;
 }
 
-.section-div {
-    margin: 100px auto;
+.middle-container .section-logo {
+    margin: 10px 0px;
+}
+
+.middle-container .section-desc {
+    text-align: left;
+    margin: 0px 50px 50px 0px;
+}
+
+@media (min-width: 800px) {
+    .middle-container {
+        grid-template-columns: [col1-start] 25% [col1-end] 75% [last-line];
+
+    }
+    .middle-container .section-header {
+        grid-column: span 2;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+    .middle-container {
+        grid-template-rows: minmax(repeat(20, 1fr));
+    }
+    .middle-container .section-header {
+        grid-column: span 1;
+    }
+
 }
 
 .middle-container h1 {
     font-size: 2.5rem;
-    text-align: center;
 }
 
 .middle-container h2 {
-    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .middle-container h3 {
     font-size: 1.2rem;
+    font-style: italic;
+    color: var(--colorGrey);
+    font-weight: normal;
+    /* margin: 0px;    Make first line align to top of image */
 }
+
 
 .middle-container p {
     line-height: var(--lineHeight);
@@ -139,45 +175,10 @@ body {
     width: 4%;
 }
 
-/* Section div: Work */
 
-.work-div-row {
-    width: 80%;
-    margin: 50px auto;
 
-}
 
-.work-img-div {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-}
-
-.work-role {
-    font-weight: bold;
-    margin: 0px;    /* Make first line align to top of image */
-}
-
-.work-date {
-    font-style: italic;
-    color: var(--colorGrey);
-    font-weight: normal;
-}
-
-.work-team {
-    font-weight: bold;
-}
-
-.work-company {
-    font-weight: bold;
-}
-
-.work-desc {
-    display: inline-block;
-    width: 70%;
-}
-
-.work-img {
+.section-img {
     width: 200px;
     height: auto;
 }
