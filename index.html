@@ -11,125 +11,230 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body class="main-content">
+<body>
 
     <div class="top-container">
+
         <img class="top-cloud" src="images/cloud.png", alt="cloud-img">
-        
+        <img class="bottom-cloud" src="images/cloud.png", alt="cloud-img-2">
+
         <div class="title-div">
-            <h1 class="title">Hi, I'm Arthur Sze.</h1>
+            <h1>Hi, I'm Arthur Sze.</h1>
             <img class="profile-img" src="images/arthur.png" alt="arthur">
         </div>
 
         <div class="subtitle-div">
 
             <div class="subtitle-vert-div">
-                <h2 class="subtitle">I'm a Software Engineer.</h2>
+                <h2>I'm a Software Engineer.</h2>
                 <img class="subtitle-img" src="images/terminal.png" alt="terminal">
             </div>
 
             <div class="subtitle-vert-div">
-                <h2 class="subtitle">I solve problems.</h2>
+                <h2>I solve problems.</h2>
                 <img class="subtitle-img" src="images/puzzle-pieces.png" alt="puzzle">
             </div>
 
             <div class="subtitle-vert-div">
-                <h2 class="subtitle">And I'm always learning.</h2>
+                <h2>And I'm always learning.</h2>
                 <img class="subtitle-img" src="images/education.png" alt="education">
             </div>
             
         </div>
 
-        <img class="bottom-cloud" src="images/cloud.png", alt="cloud-img">
     </div>
 
     <div class="middle-container">
         <!-- About Me section -->
         <div class="about-me">
 
-          <p class="intro"></p>
         </div>
 
         <!-- <hr> -->
 
         <!-- Work experience section -->
-        <div class="work-div">
-          <h2>Work Experience</h2>
-
+        <div class="section-div">
+          <h1>Work Experience</h1>
           <div class="work-div-row">
-            <img class="work-left-img" src="images/cba.png" alt="">
-            <h3>Graduate Software Engineer</h3>
-            <h3>Commonwealth Bank of Australia</h3>
-            <p class="work-left-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+            
+            <div class="work-img-div">
+                <img class="work-img" src="images/cba.png" alt="">
+            </div>
+
+            <div class="work-desc">
+                <h3 class="work-role">Graduate Software Engineer</h3>
+                <h3 class="work-company">Commonwealth Bank of Australia</h3>
+                <h3 class="work-team">Rotation 2: Digital Operations Technology - Consumer Finance</h3>
+                <h3 class="work-date">Full-time &nbsp&nbsp Sep 2022 - Present</h3>
+                <ul>
+                    <li>Backend development for credit and debit card APIs</li>
+                    <li>Won 1st place for a feature-led pitch for the Commbank mobile app out of 24 submissions within the Consumer Finance domain</li>
+                    <li>Tech stack: .NET Framework, .NET Core, Azure, C#, Git, TeamCity</li>
+                </ul>
+                <br>
+                <h3 class="work-team">Rotation 1: Chief Information Office for Technology - SRE (Site Reliability Engineering)</h3>
+                <h3 class="work-date">Full-time &nbsp&nbsp Feb 2022 - Sep 2022</h3>
+                <ul>
+                    <li>Developed and deployed a custom-modified GitLab Helm chart complete with a CI pipeline, backup and restore functionality, and automated DNS provisioning for the SRE team</li>
+                    <li>Contributed to the product envisioning of an internal SRE website</li>
+                    <li>Deployed a Docusaurus static site generator for the SRE website hosted on NGINX and AWS</li>
+                    <li>Configured a CI/CD pipeline for the website build using Jenkins and shell scripting</li>
+                    <li>Built a URL Shortener in Golang as a test application for collation of metrics and logs</li>
+                    <li>Curated introductory labs for Golang, Docker and Kubernetes, targeted for new-starter Engineers and already piloted by 10+ members on the team</li>
+                    <li>Wrote shell scripts for software setup for new-starters in the team</li>
+                    <li>Established post-mortem guidelines and practices for major incidents</li>
+                    <li>Tech stack: AWS, Docker, Helm, Git, GitLab, Golang, Grafana, Helm, Jenkins, NGINX, Prometheus, Shell Scripting</li>
+                </ul>
+            </div>
+            
           </div>
 
-          <div class="work-div-row">
-            <img class="work-left-img" src="images/unsw.png" alt="">
-            <h3>Research Assistant</h3>
-            <h3>The University of New South Wales</h3>
-            <p class="work-right-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-          </div>
+          <hr>
 
           <div class="work-div-row">
-            <img class="work-left-img" src="images/resmed.png" alt="">
-            <h3>Electrical Engineering Intern</h3>
-            <h3>ResMed</h3>
-            <p class="work-right-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+
+            <div class="work-img-div">
+                <img class="work-img" src="images/unsw.png" alt="">
+                <img class="work-img" src="images/dstg.png" alt="">
+            </div>
+        
+            <div class="work-desc">
+                <h3 class="work-role">Electrical Engineering Research Assistant</ph3>
+                <h3 class="work-company">The University of New South Wales</h3>
+                <h3 class="work-team">Joint Venture with the School of Electrical Engineering and Telecommunications, and Defence, Science, and Technology Group</h3>
+                <h3 class="work-date">Part-time &nbsp&nbsp Sep 2021 - Feb 2022</h3>
+                <ul>
+                    <li>Gained an understanding of real-world implications that cause anomalies within satellite communications, such as weather, geolocation, and hardware characteristics</li>
+                    <li>Implemented and modelled advanced digital signal processing algorithms to detect such anomalies in MATLAB</li>
+                    <li>Conducted a 20+ page literature review on existing distributed anomaly detection methods in network domains such as computers, mobiles, wireless sensors, and Internet of Things</li>
+                    <li>Produced a 30+ page interim report on the team's work detailing the algorithms and results thus far</li>
+                    <li>Continuous engagement with stakeholders from UNSW and DSTG to meet deliverables</li>
+                    <li>Tech stack: MATLAB</li>
+                </ul>
+            </div>
+            
           </div>
 
+          <hr>
+          
           <div class="work-div-row">
-            <img class="work-left-img" src="images/unsw.png" alt="">
-            <h3>Student Assistant</h3>
-            <h3>The University of New South Wales</h3>
-            <p class="work-right-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+            
+            <div class="work-img-div">
+                <img class="work-img" src="images/resmed.png" alt="">
+            </div>
+
+            <div class="work-desc">
+                <h3 class="work-role">Electrical Engineering Intern</h3>
+                <h3 class="work-company">ResMed</h3>
+                <h3 class="work-team">Product Development - Electrical</h3>
+                <h3 class="work-date">Full-time, Part-time &nbsp&nbsp Dec 2020 - May 2021</h3>
+                <ul>
+                    <li>Led an investigation across 4 Engineering teams to produce a fix for misbehaving wireless Bluetooth and cellular PCBA module</li>
+                    <li>Conducted power rating tolerance analysis for PCBA components</li>
+                    <li>Debugged and fixed $1000+ of broken PCBAs using electronics lab equipment and Altium Designer</li>
+                    <li>Performed cellular and Bluetooth functional testing using a 3GHz spectrum analyser and radio frequency chamber to determine optimal device orientation</li>
+                    <li>Analysed CAN bus transceiver signal integrity between power supply unit and microcontroller, and presented findings to external supplier</li>
+                    <li>Conducted regular technical reviews of my work completed with senior engineers</li>
+                    <li>Documentated 70+ pages of experimental procedures, results, and analysis</li>
+                </ul>
+            </div>
+        
           </div>
 
-          <div class="work-div-row">
-            <img class="work-left-img" src="images/daiso.png" alt="">
-            <h3>Sales Assistant</h3>
-            <h3>Daiso</h3>
-            <p class="work-right-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-          </div>
+          <hr>
 
           <div class="work-div-row">
-            <img class="work-left-img" src="images/aec.png" alt="">
-            <h3>Warehouse Assistant</h3>
-            <h3>Australian Electoral Commission</h3>
-            <p class="work-right-p">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+            <div class="work-img-div">
+                <img class="work-img" src="images/unsw.png" alt="">
+            </div>
+            <div class="work-desc">
+                <h3 class="work-role">Student Assistant/Developer</h3>
+                <h3 class="work-company">The University of New South Wales</h3>
+                <h3 class="work-team">The School of Electrical Engineering and Telecommunications</h3>
+                <h3 class="work-date">Part-time &nbsp&nbsp Feb 2020 - Sep 2020</h3>
+                <ul>
+                    <li>Assisted in conducting experiments for building Australia's first database of children's speech</li>
+                    <li>Developed a full stack Java app for automating administrative procedures, including registering participants from a database, file backups to external NAS, and sending email confirmations</li>
+                    <li>Consumed APIs from Google and REDCap using HTTP, SMTP, FTP</li>
+                    <li>The app has processed 270+ experiments acrossed 5 universities to date</li>
+                    <li><a href=http://www.auskidtalk.edu.au>auskidtalk.edu.au</a></li>
+                </ul>
+            </div>
+            
           </div>
+
+          <hr>
+
+          <div class="work-div-row">
+
+            <div class="work-img-div">
+                <img class="work-img" src="images/daiso.png" alt="">
+            </div>
+        
+            <div class="work-desc">
+                <h3 class="work-role">Sales Assistant</h3>
+                <h3 class="work-company">Daiso</h3>
+                <h3 class="work-date">Casual &nbsp&nbsp Aug 2019 - Nov 2020</h3>
+            </div>
+            
+          </div>
+          <hr>
+          <div class="work-div-row">
+
+            <div class="work-img-div">
+                <img class="work-img" src="images/aec.png" alt="">
+            </div>
+        
+            <div class="work-desc">
+                <h3 class="work-role">Warehouse Assistant</h3>
+                <h3 class="work-company">Australian Electoral Commission</h3>
+                <h3 class="work-date">Casual &nbsp&nbsp May 2019</h3>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Thesis section -->
+        <div class="thesis">
+            <h1>Thesis</h1>
+
+            <div class="work-div-row">
+
+                <div class="work-img-div">
+                    <img class="work-img" src="images/emb.png" alt="">
+                </div>
+            
+                <div class="work-desc">
+                    <h3 class="work-role">End-To-End Deep Learning, Patient-Level Insomnia Classification</h3>
+                    <h3 class="work-date">2021</h3>
+                    <p>My Thesis was presented as an e-poster at the <a href="https://embs.papercept.net/conferences/conferences/EMBC22/program/EMBC22_ContentListWeb_2.html#tuep-34_01">IEEE EMB 2022 Conference</a> in Glasgow, Scotland. This would not have been possible without the continued guidance and mentorship provided by my supervisors <a href=https://www.linkedin.com/in/beena-ahmed>Beena Ahmed</a> and <a href=https://www.linkedin.com/in/mostafa-shahin>Mostafa Shahin</a>. Please feel free to download a 4-page summary <a href="/files/thesis-4page">here</a>.</p>
+                    <p><strong>Abstract:</strong> In this paper we propose a novel deep learning based, end-to-end approach for patient-level insomnia classification with two distinct model architectures based off one-dimensional (1D) and two-dimensional (2D) versions of the computer vision Convolutional Neural Network (CNN), AlexNet. We achieved up to 94.4% and 88.9% patient-level classification accuracy via our 1D and 2D models respectively. Clinical Relevance— Clinical diagnosis of insomnia is traditionally a time-consuming process. The proposed work could be coupled with existing wearable technology to deliver patients with a quick a pathway to an insomnia diagnosis.</p>
+                </div>
+                
+              </div>
 
         </div>
 
-        <hr>
-        
         <!-- Projects section -->
 
         <div class="projects">
-
+            <h1>Projects</h1>
         </div>
-
-        <hr>
 
         <!-- Education section -->
         <div class="education">
-            <h2>Education</h2>
+            <h1>Education</h1>
         </div>
 
-        <hr>
-
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-          <a class="btn" href="mailto:name@email.com">Contact Me</a>
-        </div>
-        <img src="https://i.giphy.com/media/j0HjChGV0J44KrrlGv/giphy.webp" alt="">
-      </div>
-      
+        <img class="cat-gif" src="https://i.giphy.com/media/j0HjChGV0J44KrrlGv/giphy.webp" alt="cat">
       
       <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/arthur-sze/">LinkedIn</a>
-        <a class="footer-link" href="https://www.arthursze.com">Website</a>
+        <footer class="contact-div">
+            <ul>
+                <li>arthur_sze@outlook.com</li>
+                <li><a href="https://www.linkedin.com/in/arthur-sze/">LinkedIn</a></li>
+            </ul>
+        </footer>
         <p class="copyright">© 2022 Arthur Sze.</p>
       </div>
       
