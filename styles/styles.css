@@ -1,12 +1,16 @@
 /* Universal elements */
 
 :root {
-    /* https://colorhunt.co/palette/00579253cde2d1f4faedf9fc */
-    --colorBackground1: #005792;
-    --colorBackground2: #53CDE2;
-    --colorBackground3: #D1F4FA;
-    --colorBackground4: #EDF9FC;
-    --colorHyperlink: #005792;
+    /* https://colorhunt.co/palette/06283d1363df47b5ffdff6ff */
+    --color1: rgb(6, 40, 61);
+    --color1T: rgba(6, 40, 61, 0.2);
+    --color2: rgb(19, 99, 223);
+    --color3: rgb(71, 181, 255);
+    --color4: rgb(223, 246, 255);
+    --colorLinkDark: #005792;
+    --colorLinkLight: rgb(201, 201, 201);
+    --colorLinkDark2: rgb(129, 182, 247);
+
 
     --colorBlack: black;
     --colorWhite: white;
@@ -21,15 +25,62 @@ body {
 
 /* Nav container elements */
 .container-nav {
+    background-color: var(--color1T);
     display: grid;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.container-nav ul li {
+    display: inline;
+    color: black;
+    padding: 5px 10px;
+    background: var(--color4);
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.container-nav .left {
+    grid-column: span 1;
+    grid-row-start: 1;
+    justify-self: start;
+    padding: 0px 10px;
+    
+}
+
+.container-nav .right {
+    grid-column: span 1;
+    grid-row-start: 1;
+    justify-self: end;
+    padding: 0px 10px;
+}
+
+.container-nav a {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.container-nav a:visited {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.container-nav a:hover {
+    text-decoration: none;
+    color:var(--colorLinkDark);
 }
 
 /* Top container elements */
 .top-container {
-    background-color: var(--colorBackground1);
+    background-color: var(--color1);
     color: var(--colorWhite);
     display: grid;
-    padding: 50px 50px 25px 50px;
+    padding: 100px 50px 25px 50px;
     text-align: center;
 }
 
@@ -41,6 +92,9 @@ body {
     font-size: 2.5rem;
 }
 
+.top-container .title-area2 {
+    place-self: center;
+}
 .top-container .profile-img {
     border-radius: 50%;
     zoom: 10%;
@@ -50,8 +104,10 @@ body {
     zoom: 40%;
     vertical-align: middle;
 }
-@media (min-width: 1200px) {
-    .top container {
+
+
+@media (min-width: 1201px) {
+    .top-container {
         grid-template-columns: repeat(6, 1fr);
         grid-auto-rows: minmax(repeat(2, 1fr));
     }
@@ -70,6 +126,7 @@ body {
         grid-row-start: 2;
     }
 }
+
 @media (max-width: 1200px) {
     .top-container {
         grid-auto-rows: minmax(repeat(6, 1fr));
@@ -108,7 +165,7 @@ body {
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .middle-container {
         grid-template-columns: [col1-start] 25% [col1-end] 75% [last-line];
 
@@ -160,12 +217,18 @@ body {
 }
 
 .middle-container a {
-    color: var(--colorHyperlink);
+    text-decoration: underline;
+    color: var(--colorBlack);
+}
+
+.middle-container a:visited {
     text-decoration: none;
+    color: var(--colorBlack);
 }
 
 .middle-container a:hover {
-    color: rgb(129, 182, 247);
+    text-decoration: underline;
+    color:var(--colorLinkDark2);
 }
 
 .middle-container ul {
@@ -174,13 +237,6 @@ body {
     line-height: var(--lineHeight);
     margin: 0px 0px 0px 1rem; /* bullet point indent */
 }
-
-.middle-container hr {
-    border: dotted grey 6px;
-    border-bottom: none;
-    width: 4%;
-}
-
 
 
 
@@ -195,46 +251,57 @@ body {
 }
 
 /* Bottom container elements */
-.bottom-container {
-    background-color: var(--colorBackground2);
-    margin-top: 0px;
-    padding: 20px 0 10px;
-    text-align: center;
-}
 
-.bottom-container p {
-    text-align: center;
-}
-
-.footer-link {
-
-}
-
-.bottom-container a:hover {
+footer {
+    background-color: var(--color1);
+    display: grid;
     color: var(--colorWhite);
-}
-
-.copyright {
+    padding: 10px 0px;
     text-align: center;
-}
 
-.contact-me {
-    width: 40%;
 
 }
 
-.contact-div {
-
-    text-align: center;
+footer a {
+    text-decoration: underline;
+    color: var(--colorWhite);
+    vertical-align: middle;
 }
 
-.contact-text {
-    display: inline-block;
-    text-align: center;
+footer a:visited {
+    text-decoration: none;
+    color: var(--colorBlack);
 }
 
-.contact-div ul li {
-    display: inline-block;
-    text-align: center;
-    margin: auto 10px;
+footer a:hover {
+    text-decoration: underline;
+    color:var(--colorLinkDark2);
 }
+
+footer .contact {
+    padding: 0px;
+    height: 3rem;
+}
+
+footer .copyright {
+    padding: 0px;
+    height: 3rem;
+}
+
+footer .icon {
+    width: 1.5rem;
+}
+
+footer ul {
+    padding: 0px;
+
+}
+
+footer li {
+    display: inline;
+    margin: 0px 10px;
+    padding: 0px;
+    justify-self: start;
+    align-self: center;
+}
+
