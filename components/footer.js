@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
                 </ul>
             </div>
             <div class="copyright">
-                <p>Made with plain HTML, CSS, and JS. © 2022 Arthur Sze.</p>
+                <p>Made with plain HTML, CSS, and JS. &#169; 2022 Arthur Sze.</p>
             </div>
         `;
     }
