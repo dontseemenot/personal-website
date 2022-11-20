@@ -16,6 +16,7 @@ class NavBar extends HTMLElement {
             <ul class="left">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="work.html">Work Experience</a></li>
+                <li><a href="thesis.html">Thesis</a></li>
             </ul>
             <ul class="right">
             </ul>

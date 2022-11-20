@@ -38,7 +38,7 @@ a {
         background-color: $linkPink;
     }
     
-    &:hover {
+    &:Border {
         color: $linkPink;
 
         &::before {

@@ -1,0 +1,178 @@
+/* Top container elements */
+.top-container {
+    background-color: var(--color1);
+    color: var(--colorWhite);
+    display: grid;
+    padding: 100px 50px 25px 50px;
+    text-align: center;
+}
+
+.top-container h1 {
+    font-size: 5rem;
+}
+
+.top-container h2 {
+    font-size: 2.5rem;
+}
+
+.top-container .title-area2 {
+    place-self: center;
+}
+.top-container .profile-img {
+    border-radius: 50%;
+    zoom: 10%;
+}
+
+.top-container .subtitle-img {
+    zoom: 40%;
+    vertical-align: middle;
+}
+
+/* For desktop, tablets */
+@media (min-width: 1201px) {
+    .top-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(repeat(2, 1fr));
+    }
+    .top-container .title-area1 {
+        grid-column: span 4;
+        grid-row-start: 1;
+    }
+    
+    .top-container .title-area2 {
+        grid-column: span 2;
+        grid-row-start: 1;
+    }
+    
+    .top-container .subtitle-area {
+        grid-column: span 2;
+        grid-row-start: 2;
+    }
+}
+
+/* For Mobile phones */
+@media (max-width: 1200px) {
+    .top-container {
+        grid-auto-rows: minmax(repeat(6, 1fr));
+    }
+    .top-container .title-area1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .top-container .title-area2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .top-container .subtitle-area {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Featured home page container elements*/
+.featured-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    gap: 5rem;
+    background-color: var(--colorWhite);
+
+    margin: 5rem;
+    
+}
+
+.featured-container .item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+}
+
+.featured-container .logo-div {
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+    place-items: center;
+}
+
+.featured-container .desc-div {
+    padding: 1rem;
+}
+
+.featured-container img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* align-self: center;
+    justify-self: center; */
+    
+}
+
+
+.featured-container h2 {
+    text-align: center;
+}
+
+.featured-container h3 {
+    text-align: left;
+}
+
+
+
+
+.featured-container a {
+    pointer-events: none;
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.featured-container a:visited {
+    pointer-events: none;
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+
+.featured-container .cba {
+    background-color: var(--colorCbaBack);
+    border-color: var(--colorCbaBorder);
+}
+
+.featured-container .unsw-dstg {
+    background-color: var(--colorUnswDstgBack);
+    border-color: var(--colorUnswDstgBorder);
+}
+
+.featured-container .unsw-akt {
+    background-color: var(--colorUnswAktBack);
+    border-color: var(--colorUnswAktBorder);
+}
+
+.featured-container .thesis {
+    background-color: var(--colorThesisBack);
+    border-color: var(--colorThesisBorder);
+}
+
+.featured-container .resmed {
+    background-color: var(--colorResmedBack);
+    border-color: var(--colorResmedBorder);
+}
+
+.heading {
+    text-align: center;
+}
+
+:root {
+    --colorCbaBack: rgb(255, 251, 191);
+    --colorCbaBorder: rgb(250, 250, 88);
+    --colorUnswDstgBack: rgb(255, 213, 213);
+    --colorUnswDstgBorder: rgb(255, 145, 145);
+    --colorUnswAktBack: rgb(193, 255, 191);
+    --colorUnswAktBorder: rgb(140, 252, 137);
+    --colorResmedBack: rgb(210, 239, 255);
+    --colorResmedBorder: rgb(137, 214, 255);
+    --colorThesisBack: rgb(244, 228, 255);
+    --colorThesisBorder: rgb(219, 170, 255);
+}

@@ -70,85 +70,17 @@ body {
     color: var(--colorBlack);
 }
 
-.container-nav a:hover {
+.container-nav a:Border {
     text-decoration: none;
     color:var(--colorLinkDark);
 }
 
-/* Top container elements */
-.top-container {
-    background-color: var(--color1);
-    color: var(--colorWhite);
-    display: grid;
-    padding: 100px 50px 25px 50px;
-    text-align: center;
-}
-
-.top-container h1 {
-    font-size: 5rem;
-}
-
-.top-container h2 {
-    font-size: 2.5rem;
-}
-
-.top-container .title-area2 {
-    place-self: center;
-}
-.top-container .profile-img {
-    border-radius: 50%;
-    zoom: 10%;
-}
-
-.top-container .subtitle-img {
-    zoom: 40%;
-    vertical-align: middle;
-}
 
 
-@media (min-width: 1201px) {
-    .top-container {
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: minmax(repeat(2, 1fr));
-    }
-    .top-container .title-area1 {
-        grid-column: span 4;
-        grid-row-start: 1;
-    }
-    
-    .top-container .title-area2 {
-        grid-column: span 2;
-        grid-row-start: 1;
-    }
-    
-    .top-container .subtitle-area {
-        grid-column: span 2;
-        grid-row-start: 2;
-    }
-}
 
-@media (max-width: 1200px) {
-    .top-container {
-        grid-auto-rows: minmax(repeat(6, 1fr));
-    }
-    .top-container .title-area1 {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    
-    .top-container .title-area2 {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    
-    .top-container .subtitle-area {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
 
 /* Middle container elements */
-.middle-container {
+.main-container {
     background-color: var(--colorWhite);
     color: var(--colorBlack);
     display: grid;
@@ -156,53 +88,53 @@ body {
     text-align: center;
 }
 
-.middle-container .section-logo {
+.main-container .section-logo {
     margin: 10px 0px;
 }
 
-.middle-container .section-desc {
+.main-container .section-desc {
     text-align: left;
     
 }
 
 @media (min-width: 1201px) {
-    .middle-container {
+    .main-container {
         grid-template-columns: [col1-start] 25% [col1-end] 75% [last-line];
 
     }
-    .middle-container .section-header {
+    .main-container .section-header {
         grid-column: span 2;
 
     }
-    .middle-container .section-desc {
+    .main-container .section-desc {
         margin: 0px 50px 50px 0px;
     }
 
 }
 
 @media (max-width: 1200px) {
-    .middle-container {
+    .main-container {
         grid-template-rows: minmax(repeat(20, 1fr));
     }
-    .middle-container .section-header {
+    .main-container .section-header {
         grid-column: span 1;
     }
-    .middle-container .section-desc {
+    .main-container .section-desc {
         margin: 0px 50px 50px 50px;
     }
 
 }
 
-.middle-container h1 {
+.main-container h1 {
     font-size: 2.5rem;
 }
 
-.middle-container h2 {
+.main-container h2 {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.middle-container h3 {
+.main-container h3 {
     font-size: 1.2rem;
     font-style: italic;
     color: var(--colorGrey);
@@ -211,27 +143,27 @@ body {
 }
 
 
-.middle-container p {
+.main-container p {
     line-height: var(--lineHeight);
     text-align: left;
 }
 
-.middle-container a {
+.main-container a {
     text-decoration: underline;
     color: var(--colorBlack);
 }
 
-.middle-container a:visited {
+.main-container a:visited {
     text-decoration: none;
     color: var(--colorBlack);
 }
 
-.middle-container a:hover {
+.main-container a:Border {
     text-decoration: underline;
     color:var(--colorLinkDark2);
 }
 
-.middle-container ul {
+.main-container ul {
     list-style-position: outside;
     padding-left: 0;
     line-height: var(--lineHeight);
@@ -273,7 +205,7 @@ footer a:visited {
     color: var(--colorBlack);
 }
 
-footer a:hover {
+footer a:Border {
     text-decoration: underline;
     color:var(--colorLinkDark2);
 }

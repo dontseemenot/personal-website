@@ -4,6 +4,7 @@
     <script src="components/head.js" defer></script>
     <script src="components/navbar.js" defer></script>
     <script src="components/footer.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
     <head-component></head-component>
     <title>Arthur Sze</title>
 </head>
@@ -39,55 +40,64 @@
     </div>
 
 </div>
-
-    <div class="middle-container">
-
-        <h1 class="section-header">Featured</h1>
-            
-        <div class="section-logo">
-            <img class="section-img" src="images/cba.png" alt="">
-        </div>
-
-        <div class="section-desc">
-            <h2>Graduate Software Engineer</h2>
-            <h2>Commonwealth Bank of Australia</h2>
-            <h2>Rotation 2: Digital Operations Technology - Consumer Finance</h2>
-            <h3>Full-time &nbsp&nbsp Sep 2022 - Present</h3>
-            <ul>
-                <li>Backend development for credit and debit card APIs</li>
-                <li>Won 1st place for a feature-led pitch for the Commbank mobile app out of 24 submissions within the Consumer Finance domain</li>
-                <li>Tech stack: .NET Framework, .NET Core, Azure, C#, Git, TeamCity</li>
-            </ul>
-            <br>
-            <h2>Rotation 1: Chief Information Office for Technology - SRE (Site Reliability Engineering)</h2>
-            <h3>Full-time &nbsp&nbsp Feb 2022 - Sep 2022</h3>
-            <ul>
-                <li>Developed and deployed a custom-modified GitLab Helm chart complete with a CI pipeline, backup and restore functionality, and automated DNS provisioning for the SRE team</li>
-                <li>Contributed to the product envisioning of an internal SRE website</li>
-                <li>Deployed a Docusaurus static site generator for the SRE website hosted on NGINX and AWS</li>
-                <li>Configured a CI/CD pipeline for the website build using Jenkins and shell scripting</li>
-                <li>Built a URL Shortener in Golang as a test application for collation of metrics and logs</li>
-                <li>Curated introductory labs for Golang, Docker and Kubernetes, targeted for new-starter Engineers and already piloted by 10+ members on the team</li>
-                <li>Wrote shell scripts for software setup for new-starters in the team</li>
-                <li>Established post-mortem guidelines and practices for major incidents</li>
-                <li><strong>Tech stack:</strong> AWS, Docker, Helm, Git, GitLab, Golang, Grafana, Helm, Jenkins, NGINX, Prometheus, Shell Scripting</li>
-            </ul>
-        </div>
-
-        <div class="section-logo">
-            <img class="section-img" src="images/unsw.png" alt="">
-            <img class="section-img" src="images/emb.png" alt="">
+    <h1 class="heading">Featured Work</h1>
+    <div class="featured-container">
+        <div class="item cba" href="work.html">
+            <div class="logo-div">
+                <img src="images/cba.png" alt="">
+            </div>
+            <div class="desc-div">
+                <h2>Graduate Software Developer</h2>
+                <p>My current role is a backend developer where I design and implement backend APIs for credit card domain.</p>
+            </div>
         </div>
     
-        <div class="section-desc">
-            <h2>Thesis</h2>
-            <h2>End-To-End Deep Learning, Patient-Level Insomnia Classification</h2>
-            <h3>2021</h3>
-            <p><strong>Abstract:</strong> In this paper we propose a novel deep learning based, end-to-end approach for patient-level insomnia classification with two distinct model architectures based off one-dimensional (1D) and two-dimensional (2D) versions of the computer vision Convolutional Neural Network (CNN), AlexNet. We achieved up to 94.4% and 88.9% patient-level classification accuracy via our 1D and 2D models respectively. Clinical Relevance— Clinical diagnosis of insomnia is traditionally a time-consuming process. The proposed work could be coupled with existing wearable technology to deliver patients with a quick a pathway to an insomnia diagnosis.</p>
-            <p>My Thesis was presented as an e-poster at the <a href="https://embs.papercept.net/conferences/conferences/EMBC22/program/EMBC22_ContentListWeb_2.html#tuep-34_01">IEEE EMB 2022 Conference</a> in Glasgow, Scotland. Download the <a href="/files/thesis-4page.pdf">4-page summary</a>.</p>
-            <p>I give special thanks to the continued guidance and mentorship of my supervisors <a href=https://www.linkedin.com/in/beena-ahmed>Beena Ahmed</a> and <a href=https://www.linkedin.com/in/mostafa-shahin>Mostafa Shahin</a>.</p>
-            <p><strong>Tech stack:</strong> MATLAB (DSP Toolbox), Python (Keras, Numpy, Scikit, TensorFlow), Shell Scripting</p>
+        <div class="item unsw-dstg" href="work.html">
+            <div class="logo-div">
+                <img src="images/unsw.png" alt="">
+            </div>
+            <div class="desc-div">
+                <h2>Engineering Research Assistant</h2>
+                <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah </p>
+            </div>
         </div>
+
+        <div class="item unsw-akt" href="work.html">
+            <div class="logo-div">
+                <img src="images/unsw.png" alt="">
+                <img src="images/akt.png" alt="">
+            </div>
+            <div class="desc-div">
+                <h2>Student Developer</h2>
+                <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah bl</p>
+            </div>
+        </div>
+
+        <div class="item thesis" href="work.html">
+            <div class="logo-div">
+                <img src="images/unsw.png" alt="">
+                <img src="images/embc-glasgow.png" alt="">
+            </div>
+            <div class="desc-div">
+                <h2>Thesis</h2>
+                <p>I spent a whole year on my thesis and it got shown at a conference, yay!</p>
+            </div>
+        </div>
+        
+        <div class="item resmed" href="work.html">
+            <div class="logo-div">
+                <img src="images/resmed.png" alt="">
+            </div>
+            <div class="desc-div">
+                <h2>Electrical Engineering Intern</h2>
+                <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah bl</p>
+            </div>
+        </div>
+
+
+
+
+
 
     </div>
     
