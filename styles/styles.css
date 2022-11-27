@@ -1,9 +1,12 @@
-/* Universal elements */
-
+/* Global elements */
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     /* https://colorhunt.co/palette/06283d1363df47b5ffdff6ff */
-    --color1: rgb(6, 40, 61);
-    --color1T: rgba(6, 40, 61, 0.2);
+    --color1: rgb(39, 40, 56);
+    --color1T: rgba(39, 40, 56, 0.2);
     --color2: rgb(19, 99, 223);
     --color3: rgb(71, 181, 255);
     --color4: rgb(223, 246, 255);
@@ -16,20 +19,30 @@
     --colorWhite: white;
     --colorGrey: grey;
     --lineHeight: 1.5;
+
+
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
+
+}
+a {
+    /* pointer-events: none; */
+    text-decoration: none;
+
 }
 
+a:visited {
+    /* pointer-events: none; */
+    text-decoration: none;
+
+}
 /* Nav container elements */
 .container-nav {
     background-color: var(--color1T);
     display: grid;
-    padding: 0px;
     position: fixed;
-    top: 0px;
     width: 100%;
     @media (min-width: 1200px) {
         grid-template-columns: repeat(2, 1fr);
@@ -125,8 +138,10 @@ body {
 
 }
 
-.main-container h1 {
+h1 {
     font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
 }
 
 .main-container h2 {
