@@ -4,10 +4,8 @@
     color: var(--colorWhite);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* width: 60rem; */
-    /* height: 40rem; */
     grid-template-areas: "desc photo";
-    padding: 8rem;
+    padding: 6rem 6rem 6rem 6rem;
 }
 
 .intro .desc {
