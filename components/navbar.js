@@ -1,7 +1,7 @@
-// var title = document.querySelector(".top-container h1");
+// var title = document.querySelector(".intro h1");
 // title.innerHTML = "Hi, I'm Arthur, a Software Engineer.";
 
-// var subtitles = document.querySelectorAll(".top-container h2");
+// var subtitles = document.querySelectorAll(".intro h2");
 // console.log(subtitles);
 
 // var content = document.querySelector('link[rel="import"]').import;

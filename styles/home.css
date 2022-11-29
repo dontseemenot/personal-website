@@ -1,75 +1,101 @@
 /* Top container elements */
-.top-container {
+.intro {
     background-color: var(--color1);
     color: var(--colorWhite);
     display: grid;
-    padding: 3rem 10rem;
-    text-align: center;
+    grid-template-columns: 2fr 1fr;
+    /* width: 60rem; */
+    /* height: 40rem; */
+    grid-template-areas: "desc photo";
+    padding: 8rem;
 }
 
-.top-container h1 {
-    font-size: 5rem;
+.intro .desc {
+    grid-area: desc;
+    white-space: pre-line;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
 }
 
-.top-container h2 {
-    font-size: 2.5rem;
+.intro .desc ul {
+    font-size: 1.5rem;
+}
+.desc li {
+    padding-left: 0.5rem;
+    list-style-position: outside;
+}
+.desc li:nth-child(1){
+    list-style: "\1F407";  /* rabbit */
+}
+.desc li:nth-child(2) {
+    list-style: "\1F4BB"; /* laptop */
+}
+.desc li:nth-child(3) {
+    list-style: "\1F528"; /* wrench */
+}
+.desc li:nth-child(4) {
+    list-style: "\1F9E0"; /* brain */
+}
+.desc li:nth-child(5) {
+    list-style: "\1F4CB"; /* clipboard */
 }
 
-.top-container .title-area2 {
-    place-self: center;
-}
-.top-container .profile-img {
+.intro .photo {
+    padding: 2rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    display: block; /* Remove random extra space at bottom*/
+    /* overflow: hidden; */
+    justify-self: center;
+    align-self: center;
     border-radius: 50%;
-    zoom: 10%;
 }
 
-.top-container .subtitle-img {
-    zoom: 40%;
-    vertical-align: middle;
-}
 
 /* For desktop, tablets */
-@media (min-width: 1201px) {
-    .top-container {
+/* @media (min-width: 1201px) {
+    .intro {
         grid-template-columns: repeat(6, 1fr);
         grid-auto-rows: minmax(repeat(2, 1fr));
     }
-    .top-container .title-area1 {
+    .intro .title-area1 {
         grid-column: span 4;
         grid-row-start: 1;
     }
     
-    .top-container .title-area2 {
+    .intro .title-area2 {
         grid-column: span 2;
         grid-row-start: 1;
     }
     
-    .top-container .subtitle-area {
+    .intro .subtitle-area {
         grid-column: span 2;
         grid-row-start: 2;
     }
 }
 
 /* For Mobile phones */
-@media (max-width: 1200px) {
-    .top-container {
+/* @media (max-width: 1200px) {
+    .intro {
         grid-auto-rows: minmax(repeat(6, 1fr));
     }
-    .top-container .title-area1 {
+    .intro .title-area1 {
         grid-column: span 1;
         grid-row: span 1;
     }
     
-    .top-container .title-area2 {
+    .intro .title-area2 {
         grid-column: span 1;
         grid-row: span 1;
     }
     
-    .top-container .subtitle-area {
+    .intro .subtitle-area {
         grid-column: span 1;
         grid-row: span 1;
     }
-}
+}  */
 
 /* Featured home page container elements*/
 
