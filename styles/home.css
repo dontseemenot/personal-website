@@ -1,3 +1,28 @@
+:root {
+    --colorCbaBack: rgb(255, 251, 191);
+    --colorCbaBorder: rgb(255, 255, 23);
+    --colorUnswDstgBack: rgb(255, 213, 213);
+    --colorUnswDstgBorder: rgb(255, 145, 145);
+    --colorUnswAktBack: rgb(193, 255, 191);
+    --colorUnswAktBorder: rgb(140, 252, 137);
+    --colorResmedBack: rgb(210, 239, 255);
+    --colorResmedBorder: rgb(137, 214, 255);
+    --colorThesisBack: rgb(244, 228, 255);
+    --colorThesisBorder: rgb(219, 170, 255);
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+nav a{
+    color: var(--colorWhite);
+}
+
+nav a:visited {
+    color: var(--colorWhite);
+}
+
 /* Top container elements */
 .intro {
     background-color: var(--color1);
@@ -5,7 +30,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "desc photo";
-    padding: 6rem 6rem 6rem 6rem;
+    padding: 0rem 6rem 6rem 6rem;
 }
 
 .intro .desc {
@@ -245,6 +270,14 @@
 
 }
 
+.featured a {
+    text-decoration: none;
+}
+
+.featured a:visited {
+    text-decoration: none;
+}
+
 
 
 
@@ -315,15 +348,3 @@
     background-color: var(--colorResmedBack);
 } */
 
-:root {
-    --colorCbaBack: rgb(255, 251, 191);
-    --colorCbaBorder: rgb(255, 255, 23);
-    --colorUnswDstgBack: rgb(255, 213, 213);
-    --colorUnswDstgBorder: rgb(255, 145, 145);
-    --colorUnswAktBack: rgb(193, 255, 191);
-    --colorUnswAktBorder: rgb(140, 252, 137);
-    --colorResmedBack: rgb(210, 239, 255);
-    --colorResmedBorder: rgb(137, 214, 255);
-    --colorThesisBack: rgb(244, 228, 255);
-    --colorThesisBorder: rgb(219, 170, 255);
-}

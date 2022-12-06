@@ -13,14 +13,16 @@ class NavBar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <ul class="left">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work Experience</a></li>
-                <li><a href="thesis.html">Thesis</a></li>
-            </ul>
-            <ul class="right">
-            </ul>
-
+            <nav>
+                <ul class="left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work Experience</a></li>
+                    <li><a href="thesis.html">Thesis</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="">Sample</a></li>
+                </ul>
+            </nav>
         `;
 
     }

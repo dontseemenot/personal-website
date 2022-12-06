@@ -1,0 +1,106 @@
+nav {
+    background-color: var(--colorWhite);
+}
+
+nav a{
+    color: var(--colorBlack);
+}
+
+nav a:visited {
+    color: var(--colorBlack);
+}
+
+/* Middle container elements */
+.main-container {
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    display: grid;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-container .section-logo {
+    margin: 10px 0px;
+}
+
+.main-container .section-desc {
+    text-align: left;
+    
+}
+
+@media (min-width: 1201px) {
+    .main-container {
+        grid-template-columns: [col1-start] 25% [col1-end] 75% [last-line];
+
+    }
+    .main-container .section-header {
+        grid-column: span 2;
+
+    }
+    .main-container .section-desc {
+        margin: 0px 50px 50px 0px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        grid-template-rows: minmax(repeat(20, 1fr));
+    }
+    .main-container .section-header {
+        grid-column: span 1;
+    }
+    .main-container .section-desc {
+        margin: 0px 50px 50px 50px;
+    }
+
+}
+
+
+.main-container h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-container h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--colorGrey);
+    font-weight: normal;
+    /* margin: 0px;    Make first line align to top of image */
+}
+
+
+.main-container p {
+    line-height: var(--lineHeight);
+    text-align: left;
+}
+
+.main-container a {
+    text-decoration: underline;
+    color: var(--colorBlack);
+}
+
+.main-container a:visited {
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+
+.main-container a:Border {
+    text-decoration: underline;
+    color:var(--colorLinkDark2);
+}
+
+.main-container ul {
+    list-style-position: outside;
+    padding-left: 0;
+    line-height: var(--lineHeight);
+    margin: 0px 0px 0px 1rem; /* bullet point indent */
+}
+
+
+
+.section-img {
+    width: 200px;
+    height: auto;
+}

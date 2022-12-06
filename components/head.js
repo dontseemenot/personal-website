@@ -6,7 +6,7 @@ class Head extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="styles/styles.css">
+
             <link rel="icon" href="favicon.ico">
             <!-- Fonts -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
