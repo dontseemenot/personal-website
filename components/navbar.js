@@ -15,12 +15,12 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
             <nav>
                 <ul class="left">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="work.html">Work Experience</a></li>
                     <li><a href="thesis.html">Thesis</a></li>
                 </ul>
                 <ul class="right">
-                    <li><a href="">Sample</a></li>
+
                 </ul>
             </nav>
         `;
