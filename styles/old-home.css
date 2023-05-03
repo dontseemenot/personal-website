@@ -1,0 +1,263 @@
+:root {
+    --colorCbaBack: rgb(255, 251, 191);
+    --colorCbaBorder: rgb(255, 255, 23);
+    --colorUnswDstgBack: rgb(255, 213, 213);
+    --colorUnswDstgBorder: rgb(255, 145, 145);
+    --colorUnswAktBack: rgb(193, 255, 191);
+    --colorUnswAktBorder: rgb(140, 252, 137);
+    --colorResmedBack: rgb(210, 239, 255);
+    --colorResmedBorder: rgb(137, 214, 255);
+    --colorThesisBack: rgb(244, 228, 255);
+    --colorThesisBorder: rgb(219, 170, 255);
+}
+
+
+
+/* Top banner elements */
+.intro {
+    background-color: var(--color1);
+    color: var(--colorWhite);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo desc";
+    padding: 0rem 6rem 2rem 6rem;
+}
+
+/* Profile picture */
+.intro .photo {
+    padding: 0rem 1rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    display: block; /* Remove random extra space at bottom*/
+    justify-self: right;
+    align-self: right;
+    border-radius: 50%;
+}
+
+/* Name, title, links */
+.intro .desc {
+    padding: 0rem 1rem;
+    grid-area: desc;
+    text-align: left;
+    justify-self: left;
+    align-self: center;
+}
+
+.intro .desc .name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.intro .desc .title {
+    font-size: 1rem;
+}
+
+.circle-container {
+    margin-top: 0.5rem;
+}
+
+.intro .circle:hover {
+    background-color: var(--colorWhite);
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--colorGrey);
+    margin-right: 1rem;
+    transition: background-color 0.5s ease;
+}
+  
+.circle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle a{
+    display: block;
+    height: 100%;        
+    width: 100%;
+}
+
+/* Featured home page container elements*/
+.featured {
+
+    display: grid;
+    row-gap: 2rem;
+    padding: 2rem 0;
+    background-color: var(--colorWhite);
+
+}
+.feat-box {
+    /* Sliding effect */
+    --initialinfoColor: #FFF;
+    --slideinfoColor: #272838;
+
+    --initialBgColor: #272838;
+    --slideBgColor: #FFF;
+
+    color: var(--initialinfoColor);
+
+    background-image: linear-gradient(90deg,
+        var(--initialBgColor) 0%,
+        var(--initialBgColor) 50%,
+        var(--slideBgColor) 50%,
+        var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.5, .1, 1, .63),
+    color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+
+}
+.feat-box:hover {
+    color: var(--slideinfoColor);
+    cursor: pointer;
+}
+.feat-box.layout-1:hover {
+    background-position: 49.5%;
+}
+.feat-box.layout-2:hover {
+    background-position: -49.5%;
+}
+
+.featured .feat-box {
+
+
+    --feat-boxRadius: 3rem;
+    border-style: solid;
+    border-radius: var(--feat-boxRadius);
+    display: grid;
+
+    overflow: hidden;
+
+    grid-template-columns: 1fr 1fr;
+    width: 60rem;
+    height: 15rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.feat-box.layout-1 {
+    grid-template-areas: "photo info";
+}
+
+.feat-box.layout-2 {
+    grid-template-areas: "info photo";
+}
+
+.feat-box .photo {
+    grid-area: photo;
+    /* width: 100%;
+    height: 100%; */
+
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+}
+
+.feat-box .info {
+    grid-area: info;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+}
+.feat-box.layout-1 .info {
+    grid-template-areas: 
+        "title title title title logo logo"
+        "desc desc desc desc desc desc"
+        "desc desc desc desc desc desc";
+}
+
+.feat-box.layout-2 .info {
+    grid-template-areas: 
+        "logo logo title title title title"
+        "desc desc desc desc desc desc"
+        "desc desc desc desc desc desc";
+}
+
+
+.feat-box .logo {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.feat-box .logo.one {
+    grid-column: span 2;
+}
+
+.feat-box .logo.two {
+    grid-column: span 1;
+}
+
+.feat-box .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.feat-box .desc {
+    grid-area: desc;
+    justify-self: center;
+    align-self: center;
+}
+
+.featured img {
+    max-width: 5rem;
+    max-height: 5rem;
+    width: 90%;
+    display: block; /* Remove random extra space at bottom*/
+    /* overflow: hidden; */
+
+
+}
+
+.featured a {
+    text-decoration: none;
+}
+
+.featured a:visited {
+    text-decoration: none;
+}
+
+.featured h2 {
+    text-align: center;
+    /* margin: 0; */
+}
+
+.featured h3 {
+    text-align: left;
+}
+
+
+
+.cba {
+    border-color: var(--colorCbaBorder);
+}
+
+.unsw-dstg {
+    border-color: var(--colorUnswDstgBorder);
+}
+
+.unsw-akt {
+    border-color: var(--colorUnswAktBorder);
+}
+.thesis {
+    border-color: var(--colorThesisBorder);
+}
+
+.resmed {
+    border-color: var(--colorResmedBorder);
+}

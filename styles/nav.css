@@ -1,0 +1,96 @@
+/* Nav container elements */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    padding: 1rem 5rem;
+    color: var(--colorWhite);
+}
+
+
+nav li a {
+    display: block;
+    text-align: left;
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+nav a{
+    color: var(--colorWhite);
+}
+
+nav a:visited {
+    color: var(--colorWhite);
+}
+
+/* Nav top level buttons */
+
+
+nav .nav-button {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    cursor: default;
+    transition: background-color 0.5s ease;
+}
+
+nav .nav-button:hover {
+    background-color: var(--color3);
+}
+
+/* Dropdown menu */
+
+
+nav .dropdown {
+    width: 180%;
+    position: absolute;
+    z-index: 999;
+    background: var(--color2);
+    left: 0rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+nav .dropdown li {
+    display: block;
+    position: relative;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    cursor: default;
+}
+
+nav li:hover .dropdown {
+    opacity: 1;
+    display: block;
+}
+
+/* Nav subdropdown menus */
+nav .subdropdown a {
+    padding-left: 1rem;
+}
+
+nav .highlightable {
+    transition: background-color 0.5s ease;
+}
+nav .highlightable:hover {
+    background-color: var(--color3);
+}
+
+/* Left nav container (Home, Work, Projects, etc) */
+
+nav .left {
+    grid-area: left;
+    justify-self: start;
+}
+
+
+
+/* Right nav container (Light/Dark mode) */
+nav .right {
+    grid-area: right;
+    justify-self: end;
+}

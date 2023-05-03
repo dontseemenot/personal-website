@@ -7,17 +7,16 @@
     /* https://colorhunt.co/palette/06283d1363df47b5ffdff6ff */
     --color1: rgb(39, 40, 56);
     --color1T: rgba(39, 40, 56, 0.2);
-    --color2: rgb(19, 99, 223);
-    --color3: rgb(71, 181, 255);
+    --color2: rgb(34, 54, 85);
+    --color3: rgb(58, 119, 159);
     --color4: rgb(223, 246, 255);
     --colorLinkDark: #005792;
     --colorLinkLight: rgb(201, 201, 201);
     --colorLinkDark2: rgb(129, 182, 247);
 
-
     --colorBlack: black;
     --colorWhite: white;
-    --colorGrey: grey;
+    --colorGrey: rgb(152, 152, 152);
     --lineHeight: 1.5;
 
 
@@ -27,43 +26,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:visited {
     /* pointer-events: none; */
     text-decoration: none;
 
-}
-
-/* Nav container elements */
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "left right";
-    padding: 2rem 5rem;
-}
-
-nav .left {
-    grid-area: left;
-    justify-self: start;
-}
-
-nav .right {
-    grid-area: right;
-    justify-self: end;
-}
-
-nav ul li {
-    display: inline;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin: 0px 10px;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-nav a:visited {
-    text-decoration: none;
 }
 
 h1 {
@@ -72,7 +42,7 @@ h1 {
     padding: 4rem 0 0 0;
 }
 
-/* Bottom container elements */
+/* Bottom container (sitemap) elements */
 
 footer {
     background-color: var(--color1);
@@ -80,8 +50,6 @@ footer {
     color: var(--colorWhite);
     padding: 10px 0px;
     text-align: center;
-
-
 }
 
 footer a {
@@ -110,7 +78,7 @@ footer .copyright {
     height: 3rem;
 }
 
-footer .icon {
+.icon {
     width: 1.5rem;
 }
 
