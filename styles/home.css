@@ -9,6 +9,8 @@
     --colorResmedBorder: rgb(137, 214, 255);
     --colorThesisBack: rgb(244, 228, 255);
     --colorThesisBorder: rgb(219, 170, 255);
+
+
 }
 
 
@@ -89,23 +91,144 @@
 }
 
 /* Featured home page container elements*/
+
 .featured {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Two columns with equal width */
-    grid-auto-rows: minmax(0, max-content); /* Auto height based on content */
-
-    padding: 4rem 16rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
     background-color: var(--color4);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
+    padding: 3rem 15rem;
+
+}
+.featured .col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0, max-content);
+    grid-gap: 3rem;
+    background-color: var(--color4);
+
 }
 
 .featured .item {
     background-color: var(--colorWhite);
     padding: 2rem;
+
 }
 
 .featured .item h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     padding: 0rem;
+}
+/* About me section */
+.about-me {
+    padding: 1rem 0rem 0rem 0rem; /* 1 line spacing */
+}
+
+/* Skills section */
+
+.skill-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "lang level"
+                         "bar  bar";
+    padding: 1rem 0rem;
+}
+
+.skill-item .lang {
+    text-align: left;
+    overflow: clip; /* Force text to overflow outside of container */
+    white-space: nowrap;
+
+}
+
+.skill-item .level {
+    text-align: right;
+    overflow: clip;
+    white-space: nowrap;
+    color: var(--skillsLevelColor);
+}
+
+:root {
+    --skillsLevelColor:  #6c6c6c;
+    --skillsBarHeight: 0.5rem;
+    --skillsBarColorFill: #4CAF50;
+    --skillsBarColorBack: #ddd;
+    --skillsBarColorInt: #6b6b6b;
+}
+
+.skill-item .bar {
+    grid-area: bar;
+    height: 1rem;
+    width: 100%;
+    background-color: var(--skillsBarColorBack);
+    position: relative;
+}
+  
+.skill-item .progress {
+    height: 100%;
+    background-color: var(--skillsBarColorFill);
+}
+
+/* Featured work grid */
+
+:root {
+    --featuredItemHeight: 10rem;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0, max-content);
+    grid-gap: 2rem;
+    padding: 1rem 0rem;
+    
+}
+
+.work-grid .work-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo role"
+                         "logo desc"
+                         "logo link";
+    height: var(--featuredItemHeight);
+    grid-gap: 1rem;
+}
+
+.work-grid .logo {
+    grid-area: logo;
+    padding: 1rem;
+}
+
+.work-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.work-grid .role {
+    grid-area: role;
+    justify-self: left;
+    align-self: center;
+}
+
+.work-grid .company {
+    grid-area: company;
+    justify-self: left;
+    align-self: center;
+}
+
+.work-grid .desc {
+    grid-area: desc;
+    justify-self: left;
+    align-self: center;
+}
+
+.work-grid .link {
+    grid-area: link;
+    justify-self: left;
+    align-self: center;
 }
