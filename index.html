@@ -11,9 +11,14 @@
     <title>Arthur Sze</title>
 </head>
 
-<body>
 
-<navbar-component></navbar-component>
+
+
+
+
+
+<body>
+<navbar-component class="navbar"></navbar-component>
 
 <!--        
 <ul>
@@ -28,38 +33,38 @@
 </ul>
 -->
 
-<div class="intro">
-    <img class="photo" src="images/arthur.png" alt="profile-photo">
+<div class="banner">
+    <div class="photo">
+        <img src="images/arthur.png" alt="profile-photo">
+    </div>
+    
     <div class="desc">
+        <div class="name">Arthur Sze</div>
+        <div class="headline">Software Engineer | Backend API Developer | Commonwealth Bank of Australia</div>
+        <div class="links">
+            <div class="icon"><a href="https://www.linkedin.com/in/arthur-sze/"><img src="images/linkedin.svg" alt="linkedin" /></a></div>
 
-        <p class="name">Arthur Sze</p>
-
-        <p class="title">Software Engineer | Backend API Developer | Commonwealth Bank of Australia</p>
-        
-        <div class="circle-container">
-            
-            <span class="circle"><a href="https://www.linkedin.com/in/arthur-sze/"><img class="icon" src="images/linkedin.svg" alt="linkedin" /></a></span>
-
-            <span class="circle"><a href="https://github.com/dontseemenot/"><img class="icon" src="images/github.svg" alt="github" /></a></span>
-
+            <div class="icon"><a href="https://github.com/dontseemenot/"><img src="images/github.svg" alt="github" /></a></div>
         </div>
 
     </div>
 </div>
 
-<div class="featured">
+<div class="content">
     <div class="col">
         <div class="item">
-            <h1>About Me</h1>
-            <p class="about-me"></p>
-            <p>I'm a dedicated backend API developer with a year of experience designing, implementing, and maintaining scalable RESTful APIs. I have a passion for creating efficient, secure, and reliable APIs that enable smooth communication between different systems. My technical expertise includes proficiency in object-orientated programming languages such as C# and Java. In addition to my technical skills, I have strong problem-solving and analytical skills that enable me to identify and resolve complex issues quickly. As a young professional, I'm looking for opportunities in the Software Engineering Industry to further develop my technical skillsets and career growth.
-            </p>
-            <p class="about-me"></p>
-            <p>I began my engineering journey in high school when my friends and I developed a visual novel in <a href="https://www.renpy.org/">Ren'Py</a> where I was the main character, which motivated myself to pursue a Bachelor's of Computer Science and Electrical Engineering. I'm a problem solver at heart, able to leverage software tools to maximise value delivered.</p>
+            <div class="heading">About Me</div>
+            <div class="detail">
+                I'm a dedicated backend API developer with a year of experience designing, implementing, and maintaining scalable RESTful APIs. I have a passion for creating efficient, secure, and reliable APIs that enable smooth communication between different systems. My technical expertise includes proficiency in object-orientated programming languages such as C# and Java. In addition to my technical skills, I have strong problem-solving and analytical skills that enable me to identify and resolve complex issues quickly. As a young professional, I'm looking for opportunities in the Software Engineering Industry to further develop my technical skillsets and career growth.
+                <br><br>
+                I began my engineering journey in high school when my friends and I developed a visual novel in <a href="https://www.renpy.org/">Ren'Py</a> where I was the main character, which motivated myself to pursue a Bachelor's of Computer Science and Electrical Engineering. I'm a problem solver at heart, able to leverage software tools to maximise value delivered.
+            </div>
+
         </div>
+
         <div class="item">
-            <h1>Featured Work Experience</h1>
-            <div class="work-grid">
+            <div class="heading">Work Experience</div>
+            <div class="detail work-list">
 
                 <div class="work-item">
                     <div class="logo">
@@ -96,7 +101,7 @@
             </div>
         </div>
         <div class="item">
-            <h1>Featured Projects</h1>
+            <div class="heading">Projects</div>
             <div class="projects-grid">
 
 
@@ -104,98 +109,105 @@
             <p>Test123</p>
         </div>
     </div>
+
     <div class="col">
+
         <div class="item">
-            <h1>Contact Me</h1>
+            <div class="heading">Contact Me</div>
             <p>Test123</p>
         </div>
+
         <div class="item">
-            <h1>Technical Skills</h1>
+            <div class="heading">Technical Skills</div>
+            <div class="detail skill-list">
+            
+                <div class="skill-item">
+                    <div class="lang"><p>C#, .NET Core/Framework</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
 
-            <div class="skill-item">
-                <div class="lang"><p>C#, .NET Core/Framework</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
+                <div class="skill-item">
+                    <div class="lang"><p>Java</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>Git</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>Python</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>C</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>Linux</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>AWS</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>Docker, Kubernetes</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>Shell Scripting</p></div>
+                    <div class="level"><p>Advanced Beginner</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:40%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="lang"><p>HTML, CSS, JavaScript</p></div>
+                    <div class="level"><p>Advanced Beginner</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:40%"></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Java</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Python</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>C</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Git</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>AWS</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Docker, Kubernetes</p></div>
-                <div class="level"><p>Competent</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:60%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Shell Scripting</p></div>
-                <div class="level"><p>Advanced Beginner</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:40%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>Linux</p></div>
-                <div class="level"><p>Advanced Beginner</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:40%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="lang"><p>HTML, CSS, JavaScript</p></div>
-                <div class="level"><p>Advanced Beginner</p></div>
-                <div class="bar">
-                    <div class="progress" style="width:40%"></div>
-                </div>
-            </div>
-
         </div>
         <div class="item">
-            <h1>Education</h1>
-            <p>Test123</p>
+            <div class="heading">Education</div>
+            <div class="detail">
+
+
+            </div>
         </div>
     </div>
 </div>
@@ -204,6 +216,8 @@
 <footer>
     <footer-component></footer-component>
 </footer>
+    
+    
 
 
 </body>

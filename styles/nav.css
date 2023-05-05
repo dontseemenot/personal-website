@@ -1,5 +1,6 @@
 /* Nav container elements */
-nav {
+.navbar {
+    grid-area: navbar;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left right";
@@ -8,89 +9,84 @@ nav {
 }
 
 
-nav li a {
+.navbar li a {
     display: block;
-    text-align: left;
 }
 
-nav {
+.navbar {
     background-color: var(--color1);
 }
 
-nav a{
+.navbar a{
     color: var(--colorWhite);
 }
 
-nav a:visited {
+.navbar a:visited {
     color: var(--colorWhite);
 }
 
-/* Nav top level buttons */
-
-
-nav .nav-button {
-    display: inline-block;
-    position: relative;
-    padding: 1rem 1rem;
-    border-radius: 1rem;
-    cursor: default;
-    transition: background-color 0.5s ease;
+/* Nav */ 
+.navbar .left, .right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
-nav .nav-button:hover {
-    background-color: var(--color3);
-}
-
-/* Dropdown menu */
-
-
-nav .dropdown {
-    width: 180%;
-    position: absolute;
-    z-index: 999;
-    background: var(--color2);
-    left: 0rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    display: none;
-}
-
-nav .dropdown li {
-    display: block;
-    position: relative;
-    padding: 1rem 1rem;
-    border-radius: 1rem;
-    cursor: default;
-}
-
-nav li:hover .dropdown {
-    opacity: 1;
-    display: block;
-}
-
-/* Nav subdropdown menus */
-nav .subdropdown a {
-    padding-left: 1rem;
-}
-
-nav .highlightable {
-    transition: background-color 0.5s ease;
-}
-nav .highlightable:hover {
-    background-color: var(--color3);
-}
-
-/* Left nav container (Home, Work, Projects, etc) */
-
-nav .left {
+.navbar .left {
     grid-area: left;
     justify-self: start;
 }
 
-
-
-/* Right nav container (Light/Dark mode) */
-nav .right {
+.navbar .right {
     grid-area: right;
     justify-self: end;
+}
+
+.navbar .category {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 300px)); */
+    grid-template-areas: "title"
+                         "dropdown";
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1rem));
+    position: relative;
+}
+
+.navbar .title {
+    grid-area: title;
+    padding: 0.5rem;
+}
+
+/* Nav top level buttons */
+
+.navbar .title, .link {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.navbar .with-dropdown {
+    cursor: default; /* Default cursor */
+}
+
+.navbar .title:hover, .link:hover {
+    background-color: var(--color3);
+}
+
+.title:hover + .dropdown, .dropdown:hover {
+  display: block; /* Hide/Unhide dropdown menu */
+}
+
+/* Dropdown menu */
+
+.navbar .dropdown {
+    grid-area: dropdown;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: minmax(0, min-content);
+    width: 20rem;
+    position: absolute;
+    z-index: 99;
+    background: var(--color2);
+    display: none;
 }

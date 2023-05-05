@@ -13,56 +13,33 @@ class NavBar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <nav>
-                <ul class="left">
+        
+            <div class="left">
+
+                <div class="category">
+                    <div class="title">Home</div>
+                </div>
                 
-                    <li class="nav-button"><a href="/">Home</a></li>
+                <div class="category">
 
-                    <li class="nav-button">Work Experience &#x25BE
+                    <div class="title with-dropdown">Work Experience &#x25BE</div>
+                    <div class="dropdown">
+                        <a href="/"><div class="link">CBA - Backend Software Engineer</div></a>
+                        <a href="/"><div class="link">CBA - Graduate Backend Software Engineer</div></a>
+                        <a href="/"><div class="link">CBA - Graduate Site Reliability Engineer</div></a>
+                        <a href="/"><div class="link">UNSW - Research Assistant</div></a>
+                        <a href="/"><div class="link">ResMed - Electrical Engineering Intern</div></a>
+                        <a href="/"><div class="link">UNSW - Student Developer</div></a>
 
-                        <ul class="dropdown">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="right">
+                Test
+            </div>
+                
 
-                            <li>Commonwealth Bank of Australia &#x25BE</li>
-                            <ul class="subdropdown">
-                                <li class="highlightable"><a href="#">Backend Software Engineer</li>
-                                <li class="highlightable"><a href="#">Graduate Backend Software Engineer</li>
-                                <li class="highlightable"><a href="#">Graduate Site Reliability Engineer</li>
-                            </ul>
-                            
-
-                            <li>UNSW &#x25BE</li>
-                                <ul class="subdropdown">
-                                    <li class="highlightable"><a href="#">Research Assistant</li>
-                                    <li class="highlightable"><a href="#">Student Developer</li>
-                                </ul>
-
-                            
-                            <li>ResMed &#x25BE</li>
-                                <ul class="subdropdown">
-                                    <li class="highlightable"><a href="#">Electrical Engineering Intern</li>
-                                </ul>
-
-
-                            <li class="highlightable"><a href="#">Casual</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-button">Projects &#x25BE
-
-                    <ul class="dropdown">
-
-                        <li class="highlightable"><a href="thesis.html">Thesis</a></li>
-                        
-                    </ul>
-                </li>
-                    
-
-
-                </ul>
-                <ul class="right">
-
-                </ul>
-            </nav>
         `;
 
     }

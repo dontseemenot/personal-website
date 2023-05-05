@@ -25,6 +25,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-auto-rows: minmax(0, max-content);
+    grid-template-areas: "navbar"
+                         "banner"
+                         "content"
+                         "footer";
+
 }
 
 a {
@@ -44,9 +51,13 @@ h1 {
     color: var(--colorFeaturedHeading);
 }
 
+/* Grid page layout */
+
+
 /* Bottom container (sitemap) elements */
 
 footer {
+    grid-area: footer;
     background-color: var(--color1);
     display: grid;
     color: var(--colorWhite);
