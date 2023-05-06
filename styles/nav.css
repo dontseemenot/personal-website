@@ -1,0 +1,98 @@
+/* Nav container elements */
+.navbar {
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    padding: 1rem 5rem;
+    color: var(--colorWhite);
+}
+
+
+.navbar li a {
+    display: block;
+}
+
+.navbar {
+    background-color: var(--color1);
+}
+
+.navbar a{
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: var(--colorWhite);
+}
+
+
+/* Nav */ 
+.navbar .left, .right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.navbar .left {
+    grid-area: left;
+    justify-self: start;
+}
+
+.navbar .right {
+    grid-area: right;
+    justify-self: end;
+}
+
+.navbar .category {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 300px)); */
+    grid-template-areas: "title"
+                         "dropdown";
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1rem));
+    position: relative;
+}
+
+.navbar .category .with-dropdown {
+    display: none; /* Feature turned off */
+}
+
+.navbar .title {
+    grid-area: title;
+    padding: 0.5rem;
+}
+
+/* Nav top level buttons */
+
+.navbar .title, .navbar .link {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.navbar .with-dropdown {
+    cursor: default; /* Default cursor */
+}
+
+.navbar .title:hover, .navbar .link:hover {
+    background-color: var(--color3);
+}
+
+.category:hover .dropdown {
+  display: block; /* Hide/Unhide dropdown menu */
+}
+
+/* Dropdown menu */
+
+.navbar .dropdown {
+    grid-area: dropdown;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: minmax(0, min-content);
+    width: 20rem;
+    position: absolute;
+    z-index: 99;
+    background: var(--color2);
+    display: none;
+}

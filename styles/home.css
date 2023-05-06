@@ -1,0 +1,303 @@
+/* Top banner elements */
+.banner {
+    grid-area: banner;
+    background-color: var(--color1);
+    color: var(--colorWhite);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "photo desc";
+    padding: 0rem 6rem 3rem 6rem;
+    grid-gap: 2rem;
+
+}
+
+/* Profile picture */
+.banner .photo {
+    justify-self: right;
+    align-self: right;
+}
+
+.banner .photo img {
+    max-width: 10rem;
+    max-height: 10rem;
+    display: block; /* Remove random extra space at bottom */
+    border-radius: 50%;
+}
+
+/* Name, title, links */
+.banner .desc {
+    grid-area: desc;
+    padding: 0rem 0rem;
+    text-align: left;
+    justify-self: left;
+    align-self: center;
+    display: grid;
+    grid-template-areas: "name"
+                         "headline"
+                         "links"
+}
+
+.desc .name {
+    grid-area: name;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.desc .headline {
+    grid-area: headline;
+    font-size: 1rem;
+}
+
+.desc .links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Fit icons horizontally */
+    justify-self: start;
+    padding-top: 0.5rem;
+}
+
+.links .icon:hover {
+    background-color: var(--colorWhite);
+}
+
+.links .icon {
+
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--colorGrey);
+    margin-right: 4rem;     /* The icon element (Grey circle) takes up very little space than what it looks like, causing overlap, so we add a margin to the right of each icon (not padding) */
+    transition: background-color 0.5s ease;
+}
+  
+.links .icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.links .icon a{
+    display: block;
+    height: 100%;        
+    width: 100%;
+}
+
+/* content home page container elements*/
+:root {
+    --contentGridGap: 3rem;
+    --featuredOuterPadding: 2rem;
+    --featuredHeadingToDetailPadding: 1rem;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--color4);
+    grid-gap: var(--contentGridGap);
+    padding: var(--contentGridGap) 15rem;
+}
+
+.content .col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0, max-content);
+    grid-gap: var(--contentGridGap);
+    background-color: var(--color4);
+}
+
+.content .featured {
+    display: grid;
+    grid-template-areas: "heading"
+                         "detail";
+    background-color: var(--colorWhite);
+    padding: var(--featuredOuterPadding);
+    /* padding-left: var(--featuredOuterPadding);
+    padding-right: var(--featuredOuterPadding); */
+
+}
+
+/* Heading for each item */
+.featured .heading {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--colorFeaturedHeading);
+    padding-bottom: var(--featuredHeadingToDetailPadding);
+}
+
+/* All lists (work, projects, contact, skills, education) */
+.featured .detail.list {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(max-content, 1fr));
+}
+
+
+/* Skills section */
+.detail.list.skill {
+    grid-gap: 1rem 0rem;
+}
+
+.list.skill .row {
+    display: grid;
+    grid-template-areas: "lang level"
+                         "bar  bar";
+    column-gap: 1rem;   /* Leave a minimum samll gap between the skill name and competency level */
+}
+
+.skill .row .lang {
+    text-align: left;
+    /* overflow: clip; Force text to overflow outside of cell */
+    white-space: nowrap;
+}
+
+.skill .row .level {
+    text-align: right;
+    overflow: clip;
+    white-space: nowrap;
+    color: var(--skillsLevelColor);
+}
+
+:root {
+    --skillsLevelColor:  #6c6c6c;
+    --skillsBarHeight: 0.5rem;
+    --skillsBarColorFill: #4CAF50;
+    --skillsBarColorBack: #ddd;
+    --skillsBarColorInt: #6b6b6b;
+}
+
+.skill .row .bar {
+    grid-area: bar;
+    height: 1rem;
+    width: 100%;
+    background-color: var(--skillsBarColorBack);
+    position: relative;
+}
+  
+.skill .row .progress {
+    height: 100%;
+    background-color: var(--skillsBarColorFill);
+}
+
+/* Work experience */
+
+.detail.list.work {
+    grid-gap: 2rem;
+}
+
+.list.work .divider {
+    height: 1px;    /* rem causes inconsistent sizes */
+    background-color: var(--colorLightGrey);
+}
+
+.list.work .row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "logo role"
+                         "logo company"
+                         "logo desc";
+                         /* "logo link"; Feature turned off */
+    background-color: var(--colorWhite);
+}
+
+.work .row .logo {
+    grid-area: logo;
+    padding: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.work .row img {
+    max-width: 8rem;
+    max-height: 8rem;
+    display: block; /* Remove random extra space at bottom */
+    object-fit: contain;
+}
+
+.work .row .role {
+    grid-area: role;
+    justify-self: start;
+    align-self: center;
+    font-weight: bold;
+}
+
+.work .row .company {
+    grid-area: company;
+    justify-self: start;
+    align-self: center;
+    color: var(--colorFeaturedHeading);
+}
+
+.work .row .desc {
+    grid-area: desc;
+    justify-self: start;
+    align-self: center;
+    /* padding: 1rem 0rem; Featured turned off */
+    padding-top: 1rem;
+}
+
+.work .row .link {
+    grid-area: link;
+    justify-self: start;
+    align-self: center;
+    display: none; /* Feature turned off */
+}
+
+/* Contact and Education lists (contact, education) */
+
+.detail.list.contact, .detail.list.education {
+    grid-gap: 1rem 0rem;
+    
+}
+
+.education .icon, .contact .icon {
+    grid-area: icon;
+    justify-self: center;
+    align-self: center;
+    width: 1.5rem;
+}
+
+
+.contact img, .education img {
+    max-width: 1rem;
+    max-height: 1rem;
+    filter: invert(67%) sepia(0%) saturate(899%) hue-rotate(149deg) brightness(96%) contrast(69%); /* CSS filter for grey */
+    vertical-align: middle; /* Remove white space at bottom of img */
+}
+
+.contact .row {
+    display: grid;
+    grid-template-areas: "icon info";
+    justify-self: start;
+
+}
+
+.contact .row .info {
+    grid-area: info;
+}
+
+.education .row {
+    display: grid;
+    grid-template-areas: "icon degree"
+                         "icon inst-date";
+    justify-self: start;
+}
+
+.education .row .degree {
+    grid-area: degree;
+    font-weight: bold;
+}
+
+.education .row .inst-date {
+    grid-area: inst-date;
+    color: var(--colorFeaturedHeading);
+}

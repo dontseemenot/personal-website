@@ -1,233 +1,71 @@
-/* Universal elements */
-
+/* Global elements */
+* {
+    margin: 0;
+    padding: 0;
+    /* text-overflow: ellipsis; */
+}
 :root {
-    /* https://colorhunt.co/palette/00579253cde2d1f4faedf9fc */
-    --colorBackground1: #005792;
-    --colorBackground2: #53CDE2;
-    --colorBackground3: #D1F4FA;
-    --colorBackground4: #EDF9FC;
-    --colorHyperlink: #005792;
+    /* https://colorhunt.co/palette/06283d1363df47b5ffdff6ff */
+    --color1: rgb(39, 40, 56);
+    --color1T: rgba(39, 40, 56, 0.2);
+    --color2: rgb(34, 54, 85);
+    --color3: rgb(58, 119, 159);
+    --color4: rgb(223, 246, 255);
+    --colorLinkDark: #005792;
+    --colorLinkLight: rgb(201, 201, 201);
+    --colorLinkDark2: rgb(129, 182, 247);
 
     --colorBlack: black;
     --colorWhite: white;
-    --colorGrey: grey;
+    --colorGrey: #989898;
+    --colorLightGrey: rgb(198, 198, 198);
     --lineHeight: 1.5;
+
+    --colorFeaturedHeading: rgb(77, 77, 77);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    display: grid;
+    grid-auto-rows: minmax(0, max-content);
+    grid-template-areas: "navbar"
+                         "banner"
+                         "content"
+                         "footer";
+
 }
 
-/* Top container elements */
-
-.top-container {
-    background-color: var(--colorBackground1);
-    position: relative;
-    padding: 50px 0px;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: var(--colorLinkDark);
 }
 
-.title-div {
-    margin: 50px 0px 0px 0px;
-    display: inline-block;
-    width: 80%;
-    text-align: center;
-}
-
-.subtitle-div {
-    margin: 10px;
-    display: inline-block;
-    width: 80%;
-    text-align: center;
-}
-
-.subtitle-vert-div {
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-}
-
-.top-container h1 {
-    font-size: 5rem;
-    text-align: center;
-    color: var(--colorWhite);
-    display: inline-block;
-    padding-right: 2rem;
-    width: 50%;
-    vertical-align: middle;
-}
-
-.top-container h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--colorWhite);
-}
-
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 50px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 300px;
-    bottom: 400px;
-}
-
-.profile-img {
-    border-radius: 50%;
-    display: inline-block;
-    padding-left: 2rem;
-    vertical-align: middle;
-    zoom: 10%;
-    
-}
-
-.subtitle-img {
-    zoom: 40%;
-    vertical-align: middle;
-}
-
-/* Middle container elements */
-.middle-container {
-    margin: 0;
-}
-
-.section-div {
-    margin: 100px auto;
-}
-
-.middle-container h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.middle-container h2 {
-    text-align: center;
-}
-
-.middle-container h3 {
-    font-size: 1.2rem;
-}
-
-.middle-container p {
-    line-height: var(--lineHeight);
-    text-align: left;
-}
-
-.middle-container a {
-    color: var(--colorHyperlink);
+a:visited {
+    /* pointer-events: none; */
     text-decoration: none;
 }
-
-.middle-container a:hover {
-    color: rgb(129, 182, 247);
+a:hover {
+    text-decoration: underline;
 }
 
-.middle-container ul {
-    list-style-position: outside;
-    padding-left: 0;
-    line-height: var(--lineHeight);
-    margin: 0px 0px 0px 1rem; /* bullet point indent */
-}
-
-.middle-container hr {
-    border: dotted grey 6px;
-    border-bottom: none;
-    width: 4%;
-}
-
-/* Section div: Work */
-
-.work-div-row {
-    width: 80%;
-    margin: 50px auto;
-
-}
-
-.work-img-div {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-}
-
-.work-role {
-    font-weight: bold;
-    margin: 0px;    /* Make first line align to top of image */
-}
-
-.work-date {
-    font-style: italic;
-    color: var(--colorGrey);
-    font-weight: normal;
-}
-
-.work-team {
-    font-weight: bold;
-}
-
-.work-company {
-    font-weight: bold;
-}
-
-.work-desc {
-    display: inline-block;
-    width: 70%;
-}
-
-.work-img {
-    width: 200px;
-    height: auto;
-}
-
-.cat-gif {
-    display: block;
-    margin: auto;
-}
-
-/* Bottom container elements */
-.bottom-container {
-    background-color: var(--colorBackground2);
-    margin-top: 0px;
-    padding: 20px 0 10px;
+h1 {
+    font-size: 2.5rem;
     text-align: center;
+
+    color: var(--colorFeaturedHeading);
 }
 
-.bottom-container p {
-    text-align: center;
-}
+/* Grid page layout */
 
-.footer-link {
 
-}
+/* Bottom container (sitemap) elements */
 
-.bottom-container a:hover {
+footer {
+    grid-area: footer;
+    background-color: var(--color1);
+    display: grid;
     color: var(--colorWhite);
-}
-
-.copyright {
+    padding: 2rem;
     text-align: center;
 }
 
-.contact-me {
-    width: 40%;
-
-}
-
-.contact-div {
-
-    text-align: center;
-}
-
-.contact-text {
-    display: inline-block;
-    text-align: center;
-}
-
-.contact-div ul li {
-    display: inline-block;
-    text-align: center;
-    margin: auto 10px;
-}

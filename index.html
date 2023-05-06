@@ -1,242 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Arthur's Portfolio</title>
+    <script src="components/head.js" defer></script>
+    <script src="components/navbar.js" defer></script>
+    <script src="components/footer.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <head-component></head-component>
+    <title>Arthur Sze</title>
 </head>
 
+
+
+
+
+
+
 <body>
+<navbar-component class="navbar"></navbar-component>
 
-    <div class="top-container">
+<div class="banner">
+    <div class="photo">
+        <img src="images/arthur.png" alt="profile-photo">
+    </div>
+    
+    <div class="desc">
+        <div class="name">Arthur Sze</div>
+        <div class="headline">Software Engineer | Backend API Developer | Commonwealth Bank of Australia</div>
+        <div class="links">
+            <div class="icon"><a href="https://www.linkedin.com/in/arthur-sze/"><img src="images/linkedin.svg" alt="linkedin" /></a></div>
 
-        <img class="top-cloud" src="images/cloud.png", alt="cloud-img">
-        <img class="bottom-cloud" src="images/cloud.png", alt="cloud-img-2">
-
-        <div class="title-div">
-            <h1>Hi, I'm Arthur Sze.</h1>
-            <img class="profile-img" src="images/arthur.png" alt="arthur">
-        </div>
-
-        <div class="subtitle-div">
-
-            <div class="subtitle-vert-div">
-                <h2>I'm a Software Engineer.</h2>
-                <img class="subtitle-img" src="images/terminal.png" alt="terminal">
-            </div>
-
-            <div class="subtitle-vert-div">
-                <h2>I solve problems.</h2>
-                <img class="subtitle-img" src="images/puzzle-pieces.png" alt="puzzle">
-            </div>
-
-            <div class="subtitle-vert-div">
-                <h2>And I'm always learning.</h2>
-                <img class="subtitle-img" src="images/education.png" alt="education">
-            </div>
-            
+            <div class="icon"><a href="https://github.com/dontseemenot/"><img src="images/github.svg" alt="github" /></a></div>
         </div>
 
     </div>
+</div>
 
-    <div class="middle-container">
-        <!-- About Me section -->
-        <div class="about-me">
+<div class="content">
+    <div class="col">
+        <div class="featured">
+            <div class="heading">About Me</div>
+            <div class="detail">
+                I'm a dedicated backend API developer with a year of experience designing, implementing, and maintaining scalable RESTful APIs. I have a passion for creating efficient, secure, and reliable APIs that enable smooth communication between different systems. My technical expertise includes proficiency in object-orientated programming languages such as C# and Java. In addition to my technical skills, I have strong problem-solving and analytical skills that enable me to identify and resolve complex issues quickly. I'm looking for opportunities in the Software Engineering Industry to further develop my technical skillsets and career growth.
+            </div>
 
         </div>
 
-        <!-- <hr> -->
+        <div class="featured">
+            <div class="heading">Featured Work Experience</div>
+            <div class="detail list work">
 
-        <!-- Work experience section -->
-        <div class="section-div">
-          <h1>Work Experience</h1>
-          <div class="work-div-row">
-            
-            <div class="work-img-div">
-                <img class="work-img" src="images/cba.png" alt="">
-            </div>
-
-            <div class="work-desc">
-                <h3 class="work-role">Graduate Software Engineer</h3>
-                <h3 class="work-company">Commonwealth Bank of Australia</h3>
-                <h3 class="work-team">Rotation 2: Digital Operations Technology - Consumer Finance</h3>
-                <h3 class="work-date">Full-time &nbsp&nbsp Sep 2022 - Present</h3>
-                <ul>
-                    <li>Backend development for credit and debit card APIs</li>
-                    <li>Won 1st place for a feature-led pitch for the Commbank mobile app out of 24 submissions within the Consumer Finance domain</li>
-                    <li>Tech stack: .NET Framework, .NET Core, Azure, C#, Git, TeamCity</li>
-                </ul>
-                <br>
-                <h3 class="work-team">Rotation 1: Chief Information Office for Technology - SRE (Site Reliability Engineering)</h3>
-                <h3 class="work-date">Full-time &nbsp&nbsp Feb 2022 - Sep 2022</h3>
-                <ul>
-                    <li>Developed and deployed a custom-modified GitLab Helm chart complete with a CI pipeline, backup and restore functionality, and automated DNS provisioning for the SRE team</li>
-                    <li>Contributed to the product envisioning of an internal SRE website</li>
-                    <li>Deployed a Docusaurus static site generator for the SRE website hosted on NGINX and AWS</li>
-                    <li>Configured a CI/CD pipeline for the website build using Jenkins and shell scripting</li>
-                    <li>Built a URL Shortener in Golang as a test application for collation of metrics and logs</li>
-                    <li>Curated introductory labs for Golang, Docker and Kubernetes, targeted for new-starter Engineers and already piloted by 10+ members on the team</li>
-                    <li>Wrote shell scripts for software setup for new-starters in the team</li>
-                    <li>Established post-mortem guidelines and practices for major incidents</li>
-                    <li>Tech stack: AWS, Docker, Helm, Git, GitLab, Golang, Grafana, Helm, Jenkins, NGINX, Prometheus, Shell Scripting</li>
-                </ul>
-            </div>
-            
-          </div>
-
-          <hr>
-
-          <div class="work-div-row">
-
-            <div class="work-img-div">
-                <img class="work-img" src="images/unsw.png" alt="">
-                <img class="work-img" src="images/dstg.png" alt="">
-            </div>
-        
-            <div class="work-desc">
-                <h3 class="work-role">Electrical Engineering Research Assistant</ph3>
-                <h3 class="work-company">The University of New South Wales</h3>
-                <h3 class="work-team">Joint Venture with the School of Electrical Engineering and Telecommunications, and Defence, Science, and Technology Group</h3>
-                <h3 class="work-date">Part-time &nbsp&nbsp Sep 2021 - Feb 2022</h3>
-                <ul>
-                    <li>Gained an understanding of real-world implications that cause anomalies within satellite communications, such as weather, geolocation, and hardware characteristics</li>
-                    <li>Implemented and modelled advanced digital signal processing algorithms to detect such anomalies in MATLAB</li>
-                    <li>Conducted a 20+ page literature review on existing distributed anomaly detection methods in network domains such as computers, mobiles, wireless sensors, and Internet of Things</li>
-                    <li>Produced a 30+ page interim report on the team's work detailing the algorithms and results thus far</li>
-                    <li>Continuous engagement with stakeholders from UNSW and DSTG to meet deliverables</li>
-                    <li>Tech stack: MATLAB</li>
-                </ul>
-            </div>
-            
-          </div>
-
-          <hr>
-          
-          <div class="work-div-row">
-            
-            <div class="work-img-div">
-                <img class="work-img" src="images/resmed.png" alt="">
-            </div>
-
-            <div class="work-desc">
-                <h3 class="work-role">Electrical Engineering Intern</h3>
-                <h3 class="work-company">ResMed</h3>
-                <h3 class="work-team">Product Development - Electrical</h3>
-                <h3 class="work-date">Full-time, Part-time &nbsp&nbsp Dec 2020 - May 2021</h3>
-                <ul>
-                    <li>Led an investigation across 4 Engineering teams to produce a fix for misbehaving wireless Bluetooth and cellular PCBA module</li>
-                    <li>Conducted power rating tolerance analysis for PCBA components</li>
-                    <li>Debugged and fixed $1000+ of broken PCBAs using electronics lab equipment and Altium Designer</li>
-                    <li>Performed cellular and Bluetooth functional testing using a 3GHz spectrum analyser and radio frequency chamber to determine optimal device orientation</li>
-                    <li>Analysed CAN bus transceiver signal integrity between power supply unit and microcontroller, and presented findings to external supplier</li>
-                    <li>Conducted regular technical reviews of my work completed with senior engineers</li>
-                    <li>Documentated 70+ pages of experimental procedures, results, and analysis</li>
-                </ul>
-            </div>
-        
-          </div>
-
-          <hr>
-
-          <div class="work-div-row">
-            <div class="work-img-div">
-                <img class="work-img" src="images/unsw.png" alt="">
-            </div>
-            <div class="work-desc">
-                <h3 class="work-role">Student Assistant/Developer</h3>
-                <h3 class="work-company">The University of New South Wales</h3>
-                <h3 class="work-team">The School of Electrical Engineering and Telecommunications</h3>
-                <h3 class="work-date">Part-time &nbsp&nbsp Feb 2020 - Sep 2020</h3>
-                <ul>
-                    <li>Assisted in conducting experiments for building Australia's first database of children's speech</li>
-                    <li>Developed a full stack Java app for automating administrative procedures, including registering participants from a database, file backups to external NAS, and sending email confirmations</li>
-                    <li>Consumed APIs from Google and REDCap using HTTP, SMTP, FTP</li>
-                    <li>The app has processed 270+ experiments acrossed 5 universities to date</li>
-                    <li><a href=http://www.auskidtalk.edu.au>auskidtalk.edu.au</a></li>
-                </ul>
-            </div>
-            
-          </div>
-
-          <hr>
-
-          <div class="work-div-row">
-
-            <div class="work-img-div">
-                <img class="work-img" src="images/daiso.png" alt="">
-            </div>
-        
-            <div class="work-desc">
-                <h3 class="work-role">Sales Assistant</h3>
-                <h3 class="work-company">Daiso</h3>
-                <h3 class="work-date">Casual &nbsp&nbsp Aug 2019 - Nov 2020</h3>
-            </div>
-            
-          </div>
-          <hr>
-          <div class="work-div-row">
-
-            <div class="work-img-div">
-                <img class="work-img" src="images/aec.png" alt="">
-            </div>
-        
-            <div class="work-desc">
-                <h3 class="work-role">Warehouse Assistant</h3>
-                <h3 class="work-company">Australian Electoral Commission</h3>
-                <h3 class="work-date">Casual &nbsp&nbsp May 2019</h3>
-            </div>
-            
-          </div>
-        </div>
-
-        <!-- Thesis section -->
-        <div class="thesis">
-            <h1>Thesis</h1>
-
-            <div class="work-div-row">
-
-                <div class="work-img-div">
-                    <img class="work-img" src="images/emb.png" alt="">
+                <div class="row">
+                    <div class="logo">
+                        <img src="images/cba.png" alt="cba" /> 
+                    </div>
+                    <div class="role">Backend Software Engineer</div>
+                    <div class="company">Commonwealth Bank of Australia</div>
+                    <div class="desc">
+                        Overhauled existing backend REST APIs for credit card originations, enabling 7+ million customers to apply, activate, and receive their card digitally within minutes.
+                    </div>
+                    <div class="link">
+                        <a href="/">Find out more</a>
+                    </div>
                 </div>
-            
-                <div class="work-desc">
-                    <h3 class="work-role">End-To-End Deep Learning, Patient-Level Insomnia Classification</h3>
-                    <h3 class="work-date">2021</h3>
-                    <p>My Thesis was presented as an e-poster at the <a href="https://embs.papercept.net/conferences/conferences/EMBC22/program/EMBC22_ContentListWeb_2.html#tuep-34_01">IEEE EMB 2022 Conference</a> in Glasgow, Scotland. This would not have been possible without the continued guidance and mentorship provided by my supervisors <a href=https://www.linkedin.com/in/beena-ahmed>Beena Ahmed</a> and <a href=https://www.linkedin.com/in/mostafa-shahin>Mostafa Shahin</a>. Please feel free to download a 4-page summary <a href="/files/thesis-4page">here</a>.</p>
-                    <p><strong>Abstract:</strong> In this paper we propose a novel deep learning based, end-to-end approach for patient-level insomnia classification with two distinct model architectures based off one-dimensional (1D) and two-dimensional (2D) versions of the computer vision Convolutional Neural Network (CNN), AlexNet. We achieved up to 94.4% and 88.9% patient-level classification accuracy via our 1D and 2D models respectively. Clinical Relevance— Clinical diagnosis of insomnia is traditionally a time-consuming process. The proposed work could be coupled with existing wearable technology to deliver patients with a quick a pathway to an insomnia diagnosis.</p>
+
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="logo">
+                        <img src="images/cba.png" alt="cba" /> 
+                    </div>
+                    <div class="role">
+                        Graduate Site Reliability Engineer
+                    </div>
+                    <div class="company"><p>Commonwealth Bank of Australia</p></div>
+                    <div class="desc">
+                        Delivered 3 greenfield proof-of-concept projects designed to enhance developer productivity, successfully convincing the business to invest in company-wide deployment of projects.
+                    </div>
+                    <div class="link">
+                        <a href="/">Find out more</a>
+                    </div>
                 </div>
                 
-              </div>
+                <div class="divider"></div>
 
+                <div class="row">
+                    <div class="logo">
+                        <img src="images/unsw.png" alt="cba" /> 
+                    </div>
+                    <div class="role">
+                        Student Developer
+                    </div>
+                    <div class="company"><p>The University of New South Wales</p></div>
+                    <div class="desc">
+                        Developed a Java app for 5 universities to establish Australia's first database of children's speech.
+                    </div>
+                    <div class="link">
+                        <a href="/">Find out more</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <!-- Projects section -->
+        <!-- <div class="featured">
+            <div class="heading">Featured Projects</div>
+            <div class="projects-grid">
+            </div>
+            <p>Test123</p>
+        </div> -->
 
-        <div class="projects">
-            <h1>Projects</h1>
+    </div>
+
+    <div class="col">
+
+        <div class="featured">
+            <div class="heading">Contact Me</div>
+            <div class="detail list contact">
+                <div class="row">
+                    <div class="icon"><img src="images/location.svg" alt="location" /></div>
+                    <div class="info">Sydney, Australia</div>
+                </div>
+                <div class="row">
+                    <div class="icon"><img src="images/email.svg" alt="email" /></div>
+                    <div class="info">arthur_sze@outlook.com</div>
+                </div>
+                <div class="row">
+                    <div class="icon"><img src="images/linkedin-grey.svg" alt="linkedin" /></div>
+                    <div class="info"><a href="https://www.linkedin.com/in/arthur-sze">linkedin.com/in/arthur-sze</a></div>
+                </div>
+
+            </div>
         </div>
 
-        <!-- Education section -->
-        <div class="education">
-            <h1>Education</h1>
-        </div>
+        <div class="featured">
+            <div class="heading">Technical Skills</div>
+            <div class="detail list skill">
+            
+                <div class="row">
+                    <div class="lang"><p>C#, .NET Core/Framework</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
 
-        <img class="cat-gif" src="https://i.giphy.com/media/j0HjChGV0J44KrrlGv/giphy.webp" alt="cat">
-      
-      <div class="bottom-container">
-        <footer class="contact-div">
-            <ul>
-                <li>arthur_sze@outlook.com</li>
-                <li><a href="https://www.linkedin.com/in/arthur-sze/">LinkedIn</a></li>
-            </ul>
-        </footer>
-        <p class="copyright">© 2022 Arthur Sze.</p>
-      </div>
-      
+                <div class="row">
+                    <div class="lang"><p>Java</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>Git</p></div>
+                    <div class="level"><p>Proficient</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>Python</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>C</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>Linux</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>AWS</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>Docker, Kubernetes</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>HTML, CSS</p></div>
+                    <div class="level"><p>Competent</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:60%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>Shell Scripting</p></div>
+                    <div class="level"><p>Advanced Beginner</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:40%"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="lang"><p>JavaScript</p></div>
+                    <div class="level"><p>Beginner</p></div>
+                    <div class="bar">
+                        <div class="progress" style="width:20%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured">
+            <div class="heading">Education</div>
+            <div class="detail list education">
+
+                <div class="row">
+                    <div class="icon"><img src="images/cap.svg" alt="cap" /></div>
+                    <div class="degree">Bachelor of Electrical Engineering (Honours)</div>
+                    <div class="inst-date">UNSW (2017-2021)</div>
+                </div>
+
+                <div class="row">
+                    <div class="icon"><img src="images/cap.svg" alt="cap" /></div>
+                    <div class="degree">Bachelor of Computer Science</div>
+                    <div class="inst-date">UNSW (2017-2021)</div>
+                </div>
+
+                <div class="row">
+                    <div class="icon"><img src="images/cap.svg" alt="cap" /></div>
+                    <div class="degree">HSC</div>
+                    <div class="inst-date">Fort Street High School (2011-2016)</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<footer>
+    <footer-component></footer-component>
+</footer>
+    
+    
+
+
 </body>
 </html>
