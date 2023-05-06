@@ -204,8 +204,8 @@
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "logo role"
                          "logo company"
-                         "logo desc";
-                         /* "logo link"; Feature turned off */
+                         "logo desc"
+                         "logo link";
     background-color: var(--colorWhite);
 }
 
@@ -241,15 +241,14 @@
     grid-area: desc;
     justify-self: start;
     align-self: center;
-    /* padding: 1rem 0rem; Featured turned off */
-    padding-top: 1rem;
+    padding: 1rem 0rem;
+
 }
 
 .work .row .link {
     grid-area: link;
     justify-self: start;
     align-self: center;
-    display: none; /* Feature turned off */
 }
 
 /* Contact and Education lists (contact, education) */
