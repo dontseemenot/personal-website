@@ -20,7 +20,7 @@ class NavBar extends HTMLElement {
                     <div class="title">Home</div>
                 </div>
                 
-                <div class="category">
+                <div class="category work-exp">
 
                     <div class="title with-dropdown">Work Experience &#x25BE</div>
                     <div class="dropdown">
@@ -30,7 +30,6 @@ class NavBar extends HTMLElement {
                         <a href="/"><div class="link">UNSW - Research Assistant</div></a>
                         <a href="/"><div class="link">ResMed - Electrical Engineering Intern</div></a>
                         <a href="/"><div class="link">UNSW - Student Developer</div></a>
-
                     </div>
                 </div>
             </div>
