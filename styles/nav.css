@@ -19,11 +19,13 @@
 
 .navbar a{
     color: var(--colorWhite);
+    text-decoration: none;
 }
 
 .navbar a:visited {
     color: var(--colorWhite);
 }
+
 
 /* Nav */ 
 .navbar .left, .right {
@@ -57,7 +59,7 @@
 
 /* Nav top level buttons */
 
-.navbar .title, .link {
+.navbar .title, .navbar .link {
     padding: 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -68,11 +70,11 @@
     cursor: default; /* Default cursor */
 }
 
-.navbar .title:hover, .link:hover {
+.navbar .title:hover, .navbar .link:hover {
     background-color: var(--color3);
 }
 
-.title:hover + .dropdown, .dropdown:hover {
+.category:hover .dropdown {
   display: block; /* Hide/Unhide dropdown menu */
 }
 
