@@ -36,7 +36,7 @@ class NavBar extends HTMLElement {
             </div>
     
             <div class="right">
-                Test
+
             </div>
                 
 

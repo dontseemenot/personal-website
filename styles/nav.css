@@ -52,6 +52,10 @@
     position: relative;
 }
 
+.navbar .category .with-dropdown {
+    display: none; /* Feature turned off */
+}
+
 .navbar .title {
     grid-area: title;
     padding: 0.5rem;

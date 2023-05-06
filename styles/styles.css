@@ -17,7 +17,7 @@
 
     --colorBlack: black;
     --colorWhite: white;
-    --colorGrey: rgb(152, 152, 152);
+    --colorGrey: #989898;
     --colorLightGrey: rgb(198, 198, 198);
     --lineHeight: 1.5;
 
@@ -65,50 +65,7 @@ footer {
     background-color: var(--color1);
     display: grid;
     color: var(--colorWhite);
-    padding: 10px 0px;
+    padding: 2rem;
     text-align: center;
-}
-
-footer a {
-    text-decoration: underline;
-    color: var(--colorWhite);
-    vertical-align: middle;
-}
-
-footer a:visited {
-    text-decoration: none;
-    color: var(--colorBlack);
-}
-
-footer a:Border {
-    text-decoration: underline;
-    color:var(--colorLinkDark2);
-}
-
-footer .contact {
-    padding: 0px;
-    height: 3rem;
-}
-
-footer .copyright {
-    padding: 0px;
-    height: 3rem;
-}
-
-.icon {
-    width: 1.5rem;
-}
-
-footer ul {
-    padding: 0px;
-
-}
-
-footer li {
-    display: inline;
-    margin: 0px 10px;
-    padding: 0px;
-    justify-self: start;
-    align-self: center;
 }
 
