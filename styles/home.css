@@ -1,15 +1,10 @@
 /* Top banner elements */
 .banner {
-    grid-area: banner;
-    background-color: var(--color1);
-    color: var(--colorWhite);
-    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "photo desc";
-    padding: 0rem 6rem 3rem 6rem;
     grid-gap: 2rem;
-
+    display: grid;
 }
 
 /* Profile picture */
@@ -91,20 +86,10 @@
 }
 
 /* content home page container elements*/
-:root {
-    --contentGridGap: 3rem;
-    --featuredOuterPadding: 2rem;
-    --featuredHeadingToDetailPadding: 1rem;
-}
 
 .content {
-    grid-area: content;
-    display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color: var(--color4);
-    grid-gap: var(--contentGridGap);
-    padding: var(--contentGridGap) 15rem;
 }
 
 .content .col {
@@ -128,10 +113,6 @@
 
 /* Heading for each item */
 .featured .heading {
-    font-size: 1.5rem;
-    text-align: left;
-    font-weight: bold;
-    color: var(--colorFeaturedHeading);
     padding-bottom: var(--featuredHeadingToDetailPadding);
 }
 
@@ -234,7 +215,7 @@
     grid-area: company;
     justify-self: start;
     align-self: center;
-    color: var(--colorFeaturedHeading);
+    color: var(--colorDarkGrey);
 }
 
 .work .row .desc {
@@ -298,5 +279,5 @@
 
 .education .row .inst-date {
     grid-area: inst-date;
-    color: var(--colorFeaturedHeading);
+    color: var(--colorDarkGrey);
 }

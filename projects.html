@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="components/head.js" defer></script>
+    <script src="components/navbar.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <head-component></head-component>
+    <title>Arthur Sze</title>
+</head>
+
+<body>
+
+<navbar-component class="navbar"></navbar-component>
+    
+<div class="banner">
+    Hello test 123
+</div>
+
+<div class="content">
+    <div class="project thesis">
+        <div class="heading">
+            Thesis: End-To-End Deep Learning, Patient-Level Insomnia Classification (2021)
+        </div>
+        <div class="desc">
+            <strong>Abstract:</strong> In this paper we propose a novel deep learning based, end-to-end approach for patient-level insomnia classification with two distinct model architectures based off one-dimensional (1D) and two-dimensional (2D) versions of the computer vision Convolutional Neural Network (CNN), AlexNet. We achieved up to 94.4% and 88.9% patient-level classification accuracy via our 1D and 2D models respectively. Clinical Relevance— Clinical diagnosis of insomnia is traditionally a time-consuming process. The proposed work could be coupled with existing wearable technology to deliver patients with a quick a pathway to an insomnia diagnosis.
+            <br><br>
+            My Thesis work was chosen to be presented at the <a href="https://embc.embs.org/2022/">IEEE EMB 2022 Conference</a> in Glasgow, Scotland.
+            <br><br>
+            I owe many thanks to the mentorship and guidance of my supervisors throughout the duration of my Thesis, <a href=https://www.linkedin.com/in/beena-ahmed>Beena Ahmed</a> and <a href=https://www.linkedin.com/in/mostafa-shahin>Mostafa Shahin</a>.
+            
+
+
+        </div>
+        <div class="links">
+            <a href="files/thesis-unsw-poster.jpg">UNSW Poster</a>
+            <br>
+            <a href="files/thesis-embc-4page.pdf">EMBC Poster</a>
+            <br>
+            <a href="https://embs.papercept.net/conferences/conferences/EMBC22/program/EMBC22_ContentListWeb_2.html#tuep-34_01">EMBC Program</a>
+        </div>
+
+        <div class="poster">
+
+            <input type="radio" class="buttons" name="images" id="i1" checked />
+            <input type="radio" class="buttons" name="images" id="i2" />
+
+            <div class="slide_img" id ="one">
+                <a href="files/thesis-unsw-poster.pdf"><img src="images/thesis-unsw-poster.jpg" alt="poster"></a>
+                <label for="i2" class="pre"></label>
+                <label for="i2" class="nxt"></label>
+            </div>
+            <div class="slide_img" id ="two">
+                <a href="files/thesis-embc-1page.pdf"><img src="images/thesis-embc-1page.jpg" alt="poster"></a>
+                <label for="i1" class="pre"></label>
+                <label for="i1" class="nxt"></label>
+            </div>
+
+            <div class="nav">
+                <label class="dots" id="dot1" for="i1"></label>
+                <label class="dots" id="dot2" for="i2"></label>
+            </div>
+
+
+        </div>
+
+        <div class="logos">
+            logos
+        </div>
+    </div>
+    <div class="project">
+        project2
+    </div>
+
+    </div>
+
+</div>
+<footer>
+    <footer-component></footer-component>
+</footer>
+    
+
+</body>
+</html>

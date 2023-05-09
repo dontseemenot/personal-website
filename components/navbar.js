@@ -1,11 +1,3 @@
-// var title = document.querySelector(".intro h1");
-// title.innerHTML = "Hi, I'm Arthur, a Software Engineer.";
-
-// var subtitles = document.querySelectorAll(".intro h2");
-// console.log(subtitles);
-
-// var content = document.querySelector('link[rel="import"]').import;
-
 class NavBar extends HTMLElement {
     constructor() {
         super();
@@ -17,7 +9,7 @@ class NavBar extends HTMLElement {
             <div class="left">
 
                 <div class="category">
-                    <div class="title">Home</div>
+                    <a href="/"><div class="title">Home</div></a>
                 </div>
                 
                 <div class="category work-exp">

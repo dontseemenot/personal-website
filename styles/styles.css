@@ -4,6 +4,7 @@
     padding: 0;
     /* text-overflow: ellipsis; */
 }
+
 :root {
     /* https://colorhunt.co/palette/06283d1363df47b5ffdff6ff */
     --color1: rgb(39, 40, 56);
@@ -16,23 +17,52 @@
     --colorLinkDark2: rgb(129, 182, 247);
 
     --colorBlack: black;
-    --colorWhite: white;
+    --colorDarkGrey: rgb(77, 77, 77);
     --colorGrey: #989898;
     --colorLightGrey: rgb(198, 198, 198);
-    --lineHeight: 1.5;
+    --colorWhite: white;
 
-    --colorFeaturedHeading: rgb(77, 77, 77);
+    --lineHeight: 1.5;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    
     display: grid;
     grid-auto-rows: minmax(0, max-content);
     grid-template-areas: "navbar"
                          "banner"
                          "content"
                          "footer";
+}
 
+.banner {
+    grid-area: banner;
+    background-color: var(--color1);
+    color: var(--colorWhite);
+    
+    padding: 0rem 6rem 3rem 6rem;
+}
+
+:root {
+    --contentGridGap: 3rem;
+    --featuredOuterPadding: 2rem;
+    --featuredHeadingToDetailPadding: 1rem;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    background-color: var(--color4);
+    grid-gap: var(--contentGridGap);
+    padding: var(--contentGridGap) 15%;
+}
+
+.heading {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--colorDarkGrey);
 }
 
 a {
@@ -41,31 +71,8 @@ a {
 }
 
 a:visited {
-    /* pointer-events: none; */
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
-
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-
-    color: var(--colorFeaturedHeading);
-}
-
-/* Grid page layout */
-
-
-/* Bottom container (sitemap) elements */
-
-footer {
-    grid-area: footer;
-    background-color: var(--color1);
-    display: grid;
-    color: var(--colorWhite);
-    padding: 2rem;
-    text-align: center;
-}
-
