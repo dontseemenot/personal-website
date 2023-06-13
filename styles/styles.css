@@ -23,6 +23,8 @@
     --colorWhite: white;
 
     --lineHeight: 1.5;
+
+    --bannerFontSize: 2rem;
 }
 
 body {
@@ -40,8 +42,8 @@ body {
     grid-area: banner;
     background-color: var(--color1);
     color: var(--colorWhite);
-    
-    padding: 0rem 6rem 3rem 6rem;
+    padding: 0 0 3rem 0;
+    width: 100%;
 }
 
 :root {

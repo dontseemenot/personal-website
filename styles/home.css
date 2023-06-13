@@ -35,7 +35,7 @@
 
 .desc .name {
     grid-area: name;
-    font-size: 2rem;
+    font-size: var(--bannerFontSize);
     font-weight: bold;
 }
 
