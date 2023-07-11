@@ -1,0 +1,93 @@
+:root {
+    --projectOuterPadding: 3rem;
+    --projectInnerPadding: 2rem;
+}
+
+/* Top banner elements */
+.banner {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: var(--bannerFontSize);
+    font-weight: bold;
+}
+
+.content {
+    grid-auto-rows: minmax(0, max-content);
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-areas:    "logo company"
+                            "info info";
+    background-color: var(--colorWhite);
+    /* padding: 2rem var(--projectOuterPadding) var(--projectOuterPadding) var(--projectOuterPadding); */
+    padding: var(--projectOuterPadding);
+    grid-row-gap: 2rem;
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    height: 1.5rem;
+    position: relative; /* To allow logo to be positioned wherever as desired */
+}
+
+.logo img {
+    height: 3.5rem;
+    display: block; /* Remove random extra space at bottom */
+    position: absolute; 
+    top: -1rem; /* To achieve 3 rem padding (2 + 1) at top */
+    right: -1.5rem;
+
+}
+
+.company {
+    grid-area: company;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--colorDarkGrey);
+    justify-self: start;
+    align-self: center;
+}
+
+.info {
+    display: grid;
+    grid-area: info;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:    "role   role"
+                            "date   date"
+                            "desc   stack";
+}
+
+.role {
+    grid-area: role;
+    font-weight: bold;
+    color: var(--colorDarkGrey);
+}
+
+.date {
+    grid-area: date;
+    color: var(--colorDarkGrey);
+}
+
+.desc {
+    grid-area: desc;
+}
+
+.stack {
+    display: grid;
+    grid-area: stack;
+    grid-template-areas:    "lang"
+                            "tool"
+}
+
+.lang {
+    grid-area: lang;
+}
+
+.tool {
+    grid-area: tool;
+}
