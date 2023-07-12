@@ -16,10 +16,10 @@
     grid-auto-rows: minmax(0, max-content);
 }
 
-.job {
+.company {
     display: grid;
     grid-template-columns: 1fr 9fr;
-    grid-template-areas:    "logo company"
+    grid-template-areas:    "logo name"
                             "info info";
     background-color: var(--colorWhite);
     /* padding: 2rem var(--projectOuterPadding) var(--projectOuterPadding) var(--projectOuterPadding); */
@@ -44,8 +44,8 @@
 
 }
 
-.company {
-    grid-area: company;
+.name {
+    grid-area: name;
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--colorDarkGrey);
@@ -56,11 +56,18 @@
 .info {
     display: grid;
     grid-area: info;
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas:    "role   role"
-                            "date   date"
-                            "desc   stack";
+    grid-auto-rows: minmax(0, max-content);
+    grid-row-gap: var(--jobInnerPadding);
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 4fr 0.1fr 1fr;
+    grid-template-areas:    "role  role     role"
+                            "date  date     date"
+                            "desc  divider  stack";
     grid-column-gap: var(--jobInnerPadding);
+    grid-row-gap: 0.25rem;
 }
 
 .role {
@@ -76,6 +83,33 @@
 
 .desc {
     grid-area: desc;
+}
+
+ul {
+
+    position: relative;
+}
+
+li {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+li::before {
+    content:"\2022"; 
+    position: absolute;
+    left: 0rem;
+    margin-top: -0.4rem;
+    font-size: 1.5rem;
+    color: var(--colorDarkGrey);
+}
+
+
+.divider {
+    height: 100%;    /* rem causes inconsistent sizes */
+    width: 2px;
+    background-color: var(--colorLightGrey);
+    justify-self: center;
 }
 
 .stack {
