@@ -34,26 +34,35 @@
     grid-gap: var(--projectInnerPadding) 2rem;
 }
 
-.thesis .heading {
+.project.horizontal {
+    display: grid;
+    grid-template-areas: "heading"
+                         "desc"
+                         "ss";
+    grid-gap: var(--projectInnerPadding) 2rem;
+}
+
+.project .heading {
     grid-area: heading;
     /* padding-bottom: var(--featuredHeadingToDetailPadding); */
 }
 
-.thesis .title {
+.project .title {
     grid-area: title;
 }
 
-.thesis .desc {
+.project .desc {
     grid-area: desc;
-}
-
-.thesis .links {
-    grid-area: links;
 }
 
 .thesis .poster {
     grid-area: poster;
 
+}
+
+.project .ss {
+    grid-area: ss;
+    justify-self: center;
 }
 
 /* Poster and gallery slider */
@@ -158,4 +167,23 @@
     vertical-align: middle;
     object-fit: contain;
     margin: 0rem 2rem;
+}
+
+ul {
+
+    position: relative;
+}
+
+li {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+li::before {
+    content:"\2022"; 
+    position: absolute;
+    left: 0rem;
+    margin-top: -0.4rem;
+    font-size: 1.5rem;
+    color: var(--colorDarkGrey);
 }

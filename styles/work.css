@@ -18,7 +18,7 @@
 
 .company {
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 2fr 9fr;
     grid-template-areas:    "logo name"
                             "info info";
     background-color: var(--colorWhite);
@@ -70,6 +70,15 @@
     grid-row-gap: 0.25rem;
 }
 
+.job-nostack {
+    display: grid;
+    grid-template-areas:    "role"
+                            "date"
+                            "desc";
+    grid-column-gap: var(--jobInnerPadding);
+    grid-row-gap: 0.25rem;
+}
+
 .role {
     grid-area: role;
     font-weight: bold;
@@ -116,7 +125,8 @@ li::before {
     display: grid;
     grid-area: stack;
     grid-template-areas:    "lang"
-                            "tool"
+                            "tool";
+    grid-row-gap: var(--jobInnerPadding);
 }
 
 .lang {
